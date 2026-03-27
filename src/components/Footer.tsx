@@ -1,0 +1,218 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import { logos, social } from '@/asset/remoteAsset';
+
+export default function Footer() {
+  return (
+    <footer className="bg-[#05201A] text-white">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-8">
+
+        {/* Top section */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 pb-12">
+
+          {/* Brand Column */}
+          <div className="lg:col-span-1">
+            {/* Logo */}
+            <div className="flex items-center space-x-2 mb-5">
+              <Image
+                src={logos.footer}
+                alt="Gorro Logo"
+                width={130}
+                height={40}
+                className="object-contain brightness-0 invert"
+              />
+            </div>
+
+            {/* Tagline */}
+            <p className="text-[#a8c5c5] text-sm leading-relaxed mb-3">
+              The financial infrastructure for community finance.
+               Save personally. Save together.<br />
+              Govern transparently.
+            </p>
+            {/* <p className="text-white text-sm font-semibold leading-relaxed mb-6">
+              Save personally. Save together.<br />
+              Govern transparently.
+            </p> */}
+
+            {/* Sponsor note */}
+            <p className="text-[#6a9999] text-xs leading-relaxed mb-8">
+              A product of Bigstack Technologies Ltd ·<br />
+              Sponsored by Ekondo Microfinance Bank
+            </p>
+
+            {/* Social Icons */}
+            <div className="flex items-center space-x-4">
+              {/* LinkedIn */}
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80 transition-all duration-200"
+              >
+                <Image
+                  src={social.linkedin}
+                  alt="LinkedIn"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
+              </a>
+
+              {/* Facebook */}
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80 transition-all duration-200"
+              >
+                <Image
+                  src={social.facebook}
+                  alt="Facebook"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80 transition-all duration-200"
+              >
+                <Image
+                  src={social.instagram}
+                  alt="Instagram"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
+              </a>
+
+              {/* X / Twitter */}
+              <a
+                href="#"
+                aria-label="X (Twitter)"
+                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80 transition-all duration-200"
+              >
+                <Image
+                  src={social.xTwitter}
+                  alt="X (Twitter)"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
+              </a>
+
+              {/* TikTok */}
+              <a
+                href="#"
+                aria-label="TikTok"
+                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80 transition-all duration-200"
+              >
+                <Image
+                  src={social.tiktok}
+                  alt="TikTok"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
+              </a>
+            </div>
+          </div>
+
+          {/* Spacer on large screens */}
+          {/* <div className="hidden lg:block" /> */}
+
+          {/* Products Column */}
+          <div>
+            <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-6">
+              Products
+            </h3>
+            <ul className="space-y-4">
+              {[
+                { label: 'Gorro Cluster', href: '/products/cluster' },
+                { label: 'Circle savings', href: '/products/circle-savings' },
+                { label: 'Fixed Savings', href: '/products/fixed-savings' },
+                { label: 'Target Savings', href: '/products/target-savings' },
+                { label: 'Gorro Vault', href: '/products/vault' },
+              ].map(({ label, href }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company + Legal combined column */}
+          <div className="grid grid-cols-2 gap-8">
+            {/* Company */}
+            <div>
+              <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-6">
+                Company
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  { label: 'About Gorro', href: '/about' },
+                  { label: 'For investors', href: '/investors' },
+                  { label: 'Contact us', href: '/contact' },
+                ].map(({ label, href }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-6">
+                Legal
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  { label: 'Privacy Policy', href: '/privacy' },
+                  { label: 'Terms of Service', href: '/terms' },
+                  { label: 'Compliance', href: '/compliance' },
+                ].map(({ label, href }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-[#1e4545]" />
+
+        {/* Bottom bar */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 pt-6">
+          <p className="text-[#6a9999] text-md">
+            © {new Date().getFullYear()} Bigstack Technologies Ltd. All rights reserved.
+          </p>
+          {/* <p className="text-[#6a9999] text-xs text-left md:text-right max-w-md"> */}
+          <p className="text-[#6a9999] text-md text-left md:text-right">
+          {/* <p className="text-[#6a9999] text-[16px] text-left md:text-right"> */}
+            Gorro is not a bank. Savings and treasury services are provided in partnership with Ekondo Microfinance Bank.
+          </p>
+        </div>
+
+      </div>
+    </footer>
+  );
+}
