@@ -5,79 +5,113 @@ import { features, hero } from '@/asset/remoteAsset';
 
 export default function HeroSection() {
     return (
-        <section className="bg-white animate-fade-in-up">
-            <div className="px-6 sm:px-8 lg:px-12 pt-16 pb-16">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <section className="bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
-                    {/* Left */}
-                    <div>
-                        <h1 className="text-center lg:text-left font-bold" style={{ fontFamily: 'Wittgenstein', fontWeight: '700', fontSize: '72px', lineHeight: '80px', letterSpacing: '-4%', color: '#1a1a1a' }}>
+                    {/* Left Column */}
+                    <div className="space-y-8">
+                        <h1
+                            className="text-center lg:text-left font-bold tracking-tight text-balance"
+                            style={{
+                                fontFamily: 'Wittgenstein, serif',
+                                fontWeight: 700,
+                                fontSize: 'clamp(42px, 8vw, 72px)',
+                                lineHeight: '1.1',
+                                letterSpacing: '-0.04em',
+                                color: '#1a1a1a'
+                            }}
+                        >
                             Your money.<br />
                             Your people.<br />
                             <span style={{ color: '#c8602a', fontStyle: 'italic' }}>Your rules.</span>
                         </h1>
-                        <p className="text-center lg:text-left text-gray-600 text-lg mb-8 max-w-2xl leading-relaxed" style={{ fontFamily: 'Inter', fontSize: '18px', lineHeight: '1.6' }}>
-                            Gorro is the savings and treasury platform built for how
-                            Nigerians actually manage money together. Save personally.
-                            Save as a group. Govern community funds with full transparency.
+
+                        <p
+                            className="text-center lg:text-left text-[#475467] max-w-xl mx-auto lg:mx-0 text-balance"
+                            style={{
+                                fontFamily: 'Inter, sans-serif',
+                                fontSize: 'clamp(16px, 4vw, 18px)',
+                                lineHeight: '1.65'
+                            }}
+                        >
+                            Gorro is the savings and treasury platform built for how Nigerians actually manage money — together.
+                            Save personally. Save as a group. Govern community funds with full transparency.
                         </p>
-                        <div className="flex flex-wrap gap-6 text-sm text-gray-700 mb-8">
-                            <div className="flex items-center gap-2">
-                                <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+
+                        {/* Trust Badges */}
+                        <div className="flex flex-wrap gap-6 justify-center lg:justify-start">
+                            <div className="flex items-center gap-3">
+                                <div className="w-10 h-10 bg-[#F1F5F9] rounded-full flex items-center justify-center flex-shrink-0">
                                     <Image
                                         src={features.bank}
                                         alt="Bank-Backed"
-                                        width={16}
-                                        height={16}
+                                        width={24}
+                                        height={24}
                                         className="object-contain"
                                     />
                                 </div>
                                 <div>
-                                    <div className="font-semibold">Bank-Backed</div>
-                                    <div className="text-xs text-gray-400">Licensed & Regulated</div>
+                                    <div className="font-semibold text-[#1a1a1a]">Bank-Backed</div>
+                                    <div className="text-xs text-[#64748B]">Licensed &amp; Regulated</div>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-2">
-                                <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+
+                            <div className="flex items-center gap-3">
+                                <div className="w-10 h-10 bg-[#F1F5F9] rounded-full flex items-center justify-center flex-shrink-0">
                                     <Image
                                         src={features.secure}
-                                        alt="Secure"
-                                        width={16}
-                                        height={16}
+                                        alt="100% Secure"
+                                        width={24}
+                                        height={24}
                                         className="object-contain"
                                     />
                                 </div>
                                 <div>
-                                    <div className="font-semibold">100% Secure</div>
-                                    <div className="text-xs text-gray-400">Your money is safe</div>
+                                    <div className="font-semibold text-[#1a1a1a]">100% Secure</div>
+                                    <div className="text-xs text-[#64748B]">Your money is safe</div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    {/* Right Column - Feature Cards */}
+                    <div className="flex flex-col gap-6 pt-2 md:pt-4">
+
+                        {/* Individuals Card */}
+                        <div className="bg-[#EDF4F2] border-l-4 border-l-[#4F8F7A] rounded-3xl p-6 sm:p-8 hover:shadow-xl transition-all duration-300">
+                            <div className="uppercase text-xs font-semibold tracking-[0.08em] text-[#4F8F7A] mb-4">
+                                FOR INDIVIDUALS
+                            </div>
+                            <h3 className="font-bold text-[#1a1a1a] text-[21px] sm:text-[23px] leading-tight mb-1">
+                                Save with discipline.
+                            </h3>
+                            <h3 className="font-bold text-[#1a1a1a] text-[21px] sm:text-[23px] leading-tight mb-5">
+                                Earn with confidence.
+                            </h3>
+                            <p className="text-[#475467] leading-relaxed text-[15px] sm:text-base">
+                                Fixed savings, target goals, vault plans — structured products that grow your money while you focus on life.
+                            </p>
+                        </div>
+
+                        {/* Groups & Communities Card */}
+                        <div className="bg-[#EDF4F2] border-l-4 border-l-[#C65D3B] rounded-3xl p-6 sm:p-8 hover:shadow-xl transition-all duration-300">
+                            <div className="uppercase text-xs font-semibold tracking-[0.08em] text-[#C65D3B] mb-4">
+                                FOR GROUPS &amp; COMMUNITIES
+                            </div>
+                            <h3 className="font-bold text-[#1a1a1a] text-[21px] sm:text-[23px] leading-tight mb-5">
+                                A treasury your whole group can trust.
+                            </h3>
+                            <p className="text-[#475467] leading-relaxed text-[15px] sm:text-base">
+                                Cluster brings three-admin governance, a transparent ledger, and dispute protection to any community fund — church, cooperative, alumni, or Ajo group.
+                            </p>
+                        </div>
 
                     </div>
 
-                    {/* Right – two feature cards */}
-                    <div className="flex flex-col gap-4 pt-4 animate-fade-in-right">
-                        {/* Card 1 */}
-                        <div className="border-l-4 border-l-[#4F8F7A] bg-[#EDF4F2] rounded-r-xl p-6 hover-lift">
-                            <div className="text-xs font-semibold text-[#4F8F7A] uppercase tracking-widest mb-2">FOR INDIVIDUALS</div>
-                            <h3 className="font-bold text-gray-900 text-lg mb-1">Save with discipline.</h3>
-                            <h3 className="font-bold text-gray-900 text-lg mb-3">Learn with confidence.</h3>
-                            <p className="text-sm text-gray-600 leading-relaxed">
-                                Fixed savings, target goals, vault plans are structured products that grow your money while you focus on life.
-                            </p>
-                        </div>
-                        {/* Card 2 */}
-                        <div className="border-l-4 border-l-[#C65D3B] bg-[#F9EFEB] rounded-r-xl p-6 hover-lift">
-                            <div className="text-xs font-semibold text-[#C65D3B] uppercase tracking-widest mb-2">FOR GROUPS & COMMUNITIES</div>
-                            <h3 className="font-bold text-gray-900 text-lg mb-3">A treasury your whole group can trust.</h3>
-                            <p className="text-sm text-gray-600 leading-relaxed">
-                                Cluster brings three-admin governance, a transparent ledger, and dispute protection to any community fund e.g church, cooperative, alumni, or Ajo group.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
     );
 }
+
