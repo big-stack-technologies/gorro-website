@@ -6,7 +6,7 @@ import { features } from '@/asset/remoteAsset';
 export default function ProblemSection() {
     return (
         <section className="bg-[#0A3F2F] py-16">
-            <div className="w-fit px-6 sm:px-8 lg:px-12">
+            <div className="w-full px-6 sm:px-8 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
                     {/* Left Column - Text Content */}
@@ -28,8 +28,8 @@ export default function ProblemSection() {
                             </h2>
                         </div>
 
-                        <div className='flex flex-row gap-10 h-auto'>
-                            <div className="bg-[#c8602a] w-1 h-53 rounded"></div>
+                        <div className='flex flex-col sm:flex-row gap-6 sm:gap-10 h-auto'>
+                            <div className="bg-[#c8602a] w-full sm:w-1 h-1 sm:h-full rounded"></div>
                             <div className="space-y-6 text-[17px] leading-[28px] text-white/90" style={{ fontFamily: 'Wittgenstein', fontWeight: '400' }}>
                                 <p>
                                     Every month, a church treasurer collects contributions from hundreds of members and records them in a notebook.
@@ -71,7 +71,7 @@ export default function ProblemSection() {
                         ].map((item, index) => (
                             <div
                                 key={index}
-                                className="bg-white rounded-2xl p-6 flex gap-4 items-start hover-lift shadow-sm border border-white/10"
+                                className="bg-white rounded-2xl p-6 flex gap-4 items-start shadow-sm border border-white/10"
                             >
                                 <div className="w-10 h-10 rounded-xl bg-[#0A3F2F]/5 flex items-center justify-center flex-shrink-0 mt-0.5">
                                     <Image
