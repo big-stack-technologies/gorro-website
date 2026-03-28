@@ -101,8 +101,8 @@ export default function GettingStartedSection() {
                             <Image
                                 src={hero.manSaving}
                                 alt="Man using Gorro app"
-                                width={300}
-                                height={380}
+                                width={520}
+                                height={420}
                                 className="w-full h-auto object-cover"
                             />
                         </div>

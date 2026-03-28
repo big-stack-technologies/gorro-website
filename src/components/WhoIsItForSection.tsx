@@ -17,7 +17,7 @@ export default function WhoIsItForSection() {
                     {/* Individual */}
                     <div className="bg-[#0A3F2F] border border-gray-200 rounded-2xl p-8">
                         <div className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ fontFamily: 'Work Sans', fontWeight: '500', fontSize: '16px', color: 'white', display: 'inline-flex', alignItems: 'center' }}>FOR INDIVIDUALS</div>
-                        <h3 className="text-xl font-bold text-white mb-4" style={{ fontFamily: 'Wittgenstein', fontWeight: '600', fontSize: '28px', width: '60%' }}>The disciplined <span className="text-gray-300 italic">personal saver.</span></h3>
+                        <h3 className="text-xl font-bold text-white mb-4" style={{ fontFamily: 'Wittgenstein', fontWeight: '600', fontSize: '28px' }}>The disciplined <span className="text-gray-300 italic">personal saver.</span></h3>
                         <p className="text-sm text-white mb-6 leading-relaxed">
                             You have goals. Maybe it's a new device, a trip, an emergency fund, or just the discipline to save consistently every month. Gorro gives you the structure to get there and interest that rewards you for staying committed.
                         </p>
@@ -45,7 +45,7 @@ export default function WhoIsItForSection() {
                     {/* Community */}
                     <div className="bg-[#9E4A2F] border border-[#0a3d2e]/20 rounded-2xl p-8">
                         <div className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ fontFamily: 'Work Sans', fontWeight: '500', fontSize: '16px', color: 'white', display: 'inline-flex', alignItems: 'center' }}>FOR GROUPS & COMMUNITIES</div>
-                        <h3 className="text-xl font-bold text-white mb-4" style={{ fontFamily: 'Wittgenstein', fontWeight: '600', fontSize: '28px', width: '60%' }}>The treasurer who <span className="text-gray-300 italic">needs backup.</span></h3>
+                        <h3 className="text-xl font-bold text-white mb-4" style={{ fontFamily: 'Wittgenstein', fontWeight: '600', fontSize: '28px' }}>The treasurer who <span className="text-gray-300 italic">needs backup.</span></h3>
                         <p className="text-sm text-white mb-6 leading-relaxed">
                             You're managing money on behalf of people who trust you like a church, a cooperative, an alumni group, an Ajo circle. Gorro takes the weight off your shoulders by distributing governance across three admins, so no single person carries the burden alone.
                         </p>

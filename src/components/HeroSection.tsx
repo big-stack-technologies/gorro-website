@@ -79,7 +79,7 @@ export default function HeroSection() {
                     <div className="flex flex-col gap-6 pt-2 md:pt-4">
 
                         {/* Individuals Card */}
-                        <div className="bg-[#EDF4F2] border-l-4 border-l-[#4F8F7A] rounded-3xl p-6 sm:p-8 hover:shadow-xl transition-all duration-300">
+                        <div className="bg-[#EDF4F2] border-l-4 border-l-[#4F8F7A] rounded-3xl p-6 sm:p-8 hover:shadow-xl">
                             <div className="uppercase text-xs font-semibold tracking-[0.08em] text-[#4F8F7A] mb-4">
                                 FOR INDIVIDUALS
                             </div>
@@ -95,7 +95,7 @@ export default function HeroSection() {
                         </div>
 
                         {/* Groups & Communities Card */}
-                        <div className="bg-[#EDF4F2] border-l-4 border-l-[#C65D3B] rounded-3xl p-6 sm:p-8 hover:shadow-xl transition-all duration-300">
+                        <div className="bg-[#EDF4F2] border-l-4 border-l-[#C65D3B] rounded-3xl p-6 sm:p-8 hover:shadow-xl">
                             <div className="uppercase text-xs font-semibold tracking-[0.08em] text-[#C65D3B] mb-4">
                                 FOR GROUPS &amp; COMMUNITIES
                             </div>

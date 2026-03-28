@@ -47,7 +47,7 @@ export default function CtaSection() {
                         </ul>
                         <Link
                             href="/download"
-                            className="block w-full bg-[#0a3d2e] hover:bg-[#0d4f3c] text-white text-center py-3 rounded-lg font-semibold transition-colors duration-200"
+                            className="block w-full bg-[#0a3d2e] hover:bg-[#0d4f3c] text-white text-center py-3 rounded-lg font-semibold"
                         >
                             Download APK
                         </Link>
