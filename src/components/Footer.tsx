@@ -46,7 +46,7 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="LinkedIn"
-                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80 transition-all duration-200"
+                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80"
               >
                 <Image
                   src={social.linkedin}
@@ -61,7 +61,7 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="Facebook"
-                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80 transition-all duration-200"
+                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80"
               >
                 <Image
                   src={social.facebook}
@@ -76,7 +76,7 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="Instagram"
-                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80 transition-all duration-200"
+                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80"
               >
                 <Image
                   src={social.instagram}
@@ -91,7 +91,7 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="X (Twitter)"
-                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80 transition-all duration-200"
+                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80"
               >
                 <Image
                   src={social.xTwitter}
@@ -106,7 +106,7 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="TikTok"
-                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80 transition-all duration-200"
+                className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80"
               >
                 <Image
                   src={social.tiktok}
@@ -138,7 +138,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
+                    className="text-[#c8dcdc] text-sm hover:text-white"
                   >
                     {label}
                   </Link>
