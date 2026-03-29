@@ -123,7 +123,7 @@ export default function Home() {
                 Nigerians actually manage money together. Save personally.
                 Save as a group. Govern community funds with full transparency.
               </p>
-              <div className="flex flex-wrap gap-6 text-sm text-gray-700 mb-8 block  md:items-center ">
+              <div className="flex flex-wrap gap-6 text-sm text-gray-700 mb-8 block items-center text-center justify-center  md:items-center ">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
                     <Image
@@ -247,8 +247,8 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-4">
             <div>
               <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-2">MORE GORRO OPTIONS</div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight" style={{fontFamily:'Wittgenstein'}}>
-                Everything your money<br />needs <span className="text-[#c8602a] italic">in one place.</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 md:w-[60%] leading-tight" style={{fontFamily:'Wittgenstein'}}>
+                Everything your money needs <span className="text-[#c8602a] italic">in one place.</span>
               </h2>
             </div>
             <p className="text-gray-500 text-md max-w-md leading-relaxed lg:text-left">
@@ -474,8 +474,8 @@ export default function Home() {
         <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-12">
             <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3" style={{ fontFamily: 'Work Sans'}}>WHO GORRO IS BUILT FOR</div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight" style={{ fontFamily: 'Wittgenstein' }}>
-              Whether you save alone<br />or <span className="text-[#c8602a] italic" style={{ fontFamily: 'Wittgenstein', fontStyle: 'italic' }}>lead a community.</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 md:w-[35%] leading-tight" style={{ fontFamily: 'Wittgenstein' }}>
+              Whether you save alone or <span className="text-[#c8602a] italic" style={{ fontFamily: 'Wittgenstein', fontStyle: 'italic' }}>lead a community.</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
