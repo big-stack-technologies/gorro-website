@@ -108,12 +108,12 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <section className="bg-white" ref={heroRef}>
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-16">
+        <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
             {/* Left */}
             <div>
-              <h1 className="text-center lg:text-left font-bold" style={{ fontFamily: 'Wittgenstein', fontWeight: '700', fontSize: '72px', lineHeight: '80px', letterSpacing: '-4%', color: '#1a1a1a' }}>
+              <h1 className="text-center lg:text-left lg:text-7xl text-4xl font-bold text-[#272A2A]" style={{ fontFamily: 'Wittgenstein' }}>
                 Your money.<br />
                 Your people.<br />
                 <span style={{ color: '#c8602a', fontStyle: 'italic' }}>Your rules.</span>
@@ -123,14 +123,14 @@ export default function Home() {
                 Nigerians actually manage money together. Save personally.
                 Save as a group. Govern community funds with full transparency.
               </p>
-              <div className="flex flex-wrap gap-6 text-sm text-gray-700 mb-8">
+              <div className="flex flex-wrap gap-6 text-sm text-gray-700 mb-8 block  md:items-center ">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
                     <Image
                       src={features.bank}
                       alt="Bank-Backed"
-                      width={16}
-                      height={16}
+                      width={20}
+                      height={20}
                       className="object-contain"
                     />
                   </div>
@@ -144,8 +144,8 @@ export default function Home() {
                     <Image
                       src={features.secure}
                       alt="Secure"
-                      width={16}
-                      height={16}
+                      width={20}
+                      height={20}
                       className="object-contain"
                     />
                   </div>
@@ -161,18 +161,18 @@ export default function Home() {
             {/* Right – two feature cards */}
             <div className="flex flex-col gap-4 pt-4">
               {/* Card 1 */}
-              <div className="border-l-4 border-l-[#4F8F7A] bg-[#EDF4F2] rounded-r-xl p-6">
+              <div className="border-l-4 border-l-[#4F8F7A] bg-[#EDF4F2] rounded-xl p-6">
                 <div className="text-xs font-semibold text-[#4F8F7A] uppercase tracking-widest mb-2">FOR INDIVIDUALS</div>
-                <h3 className="font-bold text-gray-900 text-lg mb-1">Save with discipline.</h3>
-                <h3 className="font-bold text-gray-900 text-lg mb-3">Learn with confidence.</h3>
+                <h3 className="font-bold text-gray-900 text-lg mb-1" style={{fontFamily:'Wittgenstein'}}>Save with discipline.</h3>
+                <h3 className="font-bold text-gray-900 text-lg mb-3" style={{fontFamily:'Wittgenstein'}}>Learn with confidence.</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                     Fixed savings, target goals, vault plans are structured products that grow your money while you focus on life.
                 </p>
               </div>
               {/* Card 2 */}
-              <div className="border-l-4 border-l-[#C65D3B] bg-[#F9EFEB] rounded-r-xl p-6">
+              <div className="border-l-4 border-l-[#C65D3B] bg-[#F9EFEB] rounded-xl p-6">
                 <div className="text-xs font-semibold text-[#C65D3B] uppercase tracking-widest mb-2">FOR GROUPS &amp; COMMUNITIES</div>
-                <h3 className="font-bold text-gray-900 text-lg mb-3">A treasury your whole group can trust.</h3>
+                <h3 className="font-bold text-gray-900 text-lg mb-3" style={{fontFamily:'Wittgenstein'}}>A treasury your whole group can trust.</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {/* Manage contributions, approvals, and payouts transparently — so no single member holds all the power, and the community wins together. */}
                   Cluster brings three-admin governance, a transparent ledger, and dispute protection to any community fund e.g church, cooperative, alumni, or Ajo group.
@@ -185,7 +185,7 @@ export default function Home() {
 
       {/* ── PROBLEM SECTION ── */}
       <section className="bg-[#0A3F2F] py-16" ref={problemRef}>
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
           {/* <div className="mb-10">
             <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3">THE PROBLEM AT SCALE</div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 max-w-lg leading-tight" style={{ fontFamily: 'Wittgenstein', fontWeight: '700', fontSize: '48px', lineHeight: '56px', letterSpacing: '-4%', borderLeft: '4px solid #c8602a', paddingLeft: '16px' }}>
@@ -195,21 +195,23 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             
             <div className="space-y-4 text-gray-600 text-sm leading-relaxed" style={{ fontFamily: 'Wittgenstein', fontWeight: '400', fontSize: '23px', lineHeight: '28px', letterSpacing: '-2%', verticalAlign: 'middle' }}>
-                <div className="mb-10">
-              <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3">THE PROBLEM AT SCALE</div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white max-w-lg leading-tight" style={{ fontFamily: 'Wittgenstein', fontWeight: '700',  paddingLeft: '16px' }}>
-                Community money has always moved on <span className="text-[#c8602a] italic">trust alone.</span>
-              </h2>
-          </div>
-              <p className="font-lg text-white">
+              <div className="mb-10">
+                  <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3">THE PROBLEM AT SCALE</div>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-white max-w-lg leading-tight" style={{ fontFamily: 'Wittgenstein', fontWeight: '700',  paddingLeft: '16px' }}>
+                    Community money has always moved on <span className="text-[#c8602a] italic">trust alone.</span>
+                  </h2>
+              </div>
+              <div className='border-l-4 border-l-[#C65D3B] pl-4 max-w-[600px]'>
+                <p className="text-base md:text-lg text-white mb-2">
                 Every month, a church treasurer collects contributions on WhatsApp, and counts and moves them to a notebook.
               </p>
-              <p className="font-lg text-white">
+              <p className="text-base md:text-lg text-white mb-4">
                 Every month, an Ajo group relies on one person's memory to keep everything straight.
               </p>
-              <p className="font-lg text-[#D17D62]">
+              <p className="text-base md:text-lg text-[#D17D62]">
                 Billions of naira move through these networks with nothing more than trust and a WhatsApp group to hold it all together.
               </p>
+              </div>
             </div>
             <div className="space-y-3" ref={cardsRef}>
               {[
@@ -240,8 +242,8 @@ export default function Home() {
       </section>
 
       {/* ── PRODUCTS OVERVIEW ── */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <section id="products" className="py-20 bg-white">
+        <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-4">
             <div>
               <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-2">MORE GORRO OPTIONS</div>
@@ -249,7 +251,7 @@ export default function Home() {
                 Everything your money<br />needs <span className="text-[#c8602a] italic">in one place.</span>
               </h2>
             </div>
-            <p className="text-gray-500 text-sm max-w-xs leading-relaxed lg:text-right">
+            <p className="text-gray-500 text-md max-w-md leading-relaxed lg:text-left">
               Four products. One platform. Built around the way Nigerians actually save, personally and together.
             </p>
           </div>
@@ -306,7 +308,7 @@ export default function Home() {
           {/* Circle Savings + Ajo by Gorro */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 ">
             <div className="border border-gray-200 rounded-2xl p-8 bg-[#EDF4F2]">
-              <div className="inline-block bg-[#4F8F7A] text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">GROUP SAVINGS</div>
+              <div className="inline-block bg-[#4F8F7A] text-white text-xs font-bold px-3 py-1 rounded-full mb-4">GROUP SAVINGS</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{fontFamily:'Wittgenstein'}}>Circle Savings</h3>
               <p className="text-sm text-gray-600 mb-5 leading-relaxed">
                 Save collectively towards a shared goal. From friends, to family, and even colleagues, everyone contributes at their own pace, with full visibility into the group's progress.
@@ -388,59 +390,99 @@ export default function Home() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section className="py-20 bg-[#f5f5f0] overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <section id="how-it-works" className="py-20 bg-[#f5f5f0] overflow-hidden">
+        <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-12">
             <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3">GETTING STARTED</div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900" style={{fontFamily:'Wittgenstein'}}>
               Up and saving in<br />
               <span className="text-[#c8602a] italic">four simple steps.</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
             {/* Left photo */}
-            <div className="rounded-2xl overflow-hidden h-72 bg-gradient-to-br from-amber-200 to-yellow-100 flex items-center justify-center">
-              <span className="text-8xl">😊</span>
+            <div className=" overflow-hidden block items-center justify-center">
+              
+              <div className="w-100 h-100  mx-auto flex items-center justify-center flex-shrink-0">
+                <Image
+                    src={hero.womanSaving}
+                    alt="woman savaing"
+                    width={500}
+                    height={400}
+                    className="object-contain  mb-10"
+                  />
+              </div>
+              {/* <div className="w-100 h-100 mx-auto flex flex-col items-center justify-center  hidden md:block"> */}
+              <div className="w-100  mx-auto flex items-center text-center justify-center flex-shrink-0 hidden md:block">
+
+                <Image
+                    src={hero.belowWoman}
+                    alt="claude ai"
+                    width={100}
+                    height={100}
+                    className="object-contain mx-auto"
+                  />
+              </div>
             </div>
             {/* Steps */}
-            <div className="space-y-6">
+            <div className="space-y-6 items-center  justify-center text-center">
               {[
-                { num: '01', title: 'Download the app', desc: 'Get the app on the App Store or Google Play. Takes less than a minute.' },
-                { num: '02', title: 'Create your account', desc: 'Enter your details and verify your identity. Takes just a few minutes.' },
-                { num: '03', title: 'Open your wallet', desc: 'Fund your wallet and choose the product that meets your savings goals.' },
-                { num: '04', title: 'Start saving your way', desc: 'Create a plan, set a savings goal, or join a group. Your journey starts now.' },
+                { num: '01', title: 'Download the app', desc: 'Get the Gorro APK for Android. Install it in seconds. No app store required.', divider: "" },
+                { num: '02', title: 'Create your account', desc: 'Sign up and complete a quick identity verification. Takes about two minutes.', divider: "" },
+                { num: '03', title: 'Open your wallet', desc: 'Your Gorro wallet is your financial home. Fund it and you\'re ready to save.',  divider: ""  },
+                { num: '04', title: 'Start saving your way', desc: 'Choose a savings product, join or create a group, or set up your Cluster treasury.',   },
               ].map(step => (
-                <div key={step.num} className="flex gap-5 items-start">
-                  <div className="w-10 h-10 rounded-full bg-[#0a3d2e] text-white flex items-center justify-center font-bold text-sm flex-shrink-0">{step.num}</div>
-                  <div>
-                    <div className="font-semibold text-gray-900 mb-0.5">{step.title}</div>
-                    <div className="text-sm text-gray-500 leading-relaxed">{step.desc}</div>
+                <div key={step.num} className="flex gap-5 items-center justify-center">
+                  {/* <div className="w-10 h-10 rounded-full bg-[#0a3d2e] text-white flex items-center justify-center font-bold text-sm flex-shrink-0">{step.num}</div> */}
+                  <div className='block text-center'>
+                    <div className="w-15 h-15 mx-auto items-center text-center justify-center rounded-full bg-[#0A3F2F] text-white flex  font-bold text-lg flex-shrink-0" style={{fontFamily:'Wittgenstein'}}>{step.num}</div>
+                    <div className="font-semibold text-gray-900 mb-1 text-center" style={{fontFamily:'Work Sans'}}>{step.title}</div>
+                    <div className="text-sm text-gray-500 leading-relaxed max-w-4xl text-center" style={{fontFamily:'Work Sans'}}>{step.desc}</div>
+                    {step.divider && <div className="border-t border-gray-900 my-4 w-12 h-0.5">{step.divider}</div>}
                   </div>
                 </div>
               ))}
             </div>
             {/* Right photo */}
-            <div className="rounded-2xl overflow-hidden h-72 bg-gradient-to-br from-green-200 to-emerald-100 flex items-center justify-center">
-              <span className="text-8xl">📱</span>
+            <div className=" overflow-hidden block items-center justify-center">
+              {/* <span className="text-8xl">📱</span> */}
+              <div className="w-100 h-50  mx-auto flex items-center justify-center flex-shrink-0 hidden md:block">
+                <Image
+                    src={hero.aboveMan}
+                    alt="woman savaing"
+                    width={300}
+                    height={300}
+                    className="object-contain w-"
+                  />
+              </div>
+              <div className="w-100 h-100  mx-auto flex items-center justify-center flex-shrink-0">
+                <Image
+                    src={hero.manSaving}
+                    alt="claude ai"
+                    width={500}
+                    height={500}
+                    className="object-contain"
+                  />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── WHO IS IT FOR ── */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <section id="who-its-for" className="py-20 bg-white">
+        <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-12">
-            <div className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ fontFamily: 'Work Sans', fontWeight: '500', fontSize: '16px', lineHeight: '24px', color: '#4F8F7A' }}>WHO GORRO IS BUILT FOR</div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight" style={{ fontFamily: 'Wittgenstein', fontWeight: '700', fontSize: '48px', lineHeight: '56px',  }}>
-              Whether you save alone<br />or <span className="text-[#c8602a] italic" style={{ fontFamily: 'Wittgenstein', fontWeight: '700', fontSize: '48px', lineHeight: '56px', fontStyle: 'italic' }}>lead a community.</span>
+            <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3" style={{ fontFamily: 'Work Sans'}}>WHO GORRO IS BUILT FOR</div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight" style={{ fontFamily: 'Wittgenstein' }}>
+              Whether you save alone<br />or <span className="text-[#c8602a] italic" style={{ fontFamily: 'Wittgenstein', fontStyle: 'italic' }}>lead a community.</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Individual */}
             <div className="bg-[#0A3F2F] border border-gray-200 rounded-2xl p-8">
-              <div className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ fontFamily: 'Work Sans', fontWeight: '500', fontSize: '16px', color: 'white', display: 'inline-flex', alignItems: 'center', }}>FOR INDIVIDUALS</div>
-              <h3 className="text-xl font-bold text-white mb-4" style={{ fontFamily: 'Wittgenstein', fontWeight: '600', fontSize: '28px', width: '60%' }}>The disciplined <span className="text-gray-300 italic">personal saver.</span></h3>
+              <div className="text-xs text-white font-semibold uppercase tracking-widest mb-2" style={{ fontFamily: 'Work Sans'}}>FOR INDIVIDUALS</div>
+              <h3 className="text-2xl md:w-[50%] w-[70%]  font-bold text-white mb-4" style={{ fontFamily: 'Wittgenstein'}}>The disciplined <span className="text-gray-300 italic">personal saver.</span></h3>
               <p className="text-sm text-white mb-6 leading-relaxed">
                 You have goals. Maybe it's a new device, a trip, an emergency fund, or just the discipline to save consistently every month. Gorro gives you the structure to get there and interest that rewards you for staying committed.
               </p>
@@ -467,10 +509,10 @@ export default function Home() {
             </div>
             {/* Community */}
             <div className="bg-[#9E4A2F] border border-[#0a3d2e]/20 rounded-2xl p-8">
-              <div className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ fontFamily: 'Work Sans', fontWeight: '500', fontSize: '16px', color: 'white', display: 'inline-flex', alignItems: 'center', }}>FOR GROUPS & COMMUNITIES</div>
-              <h3 className="text-xl font-bold text-white mb-4" style={{ fontFamily: 'Wittgenstein', fontWeight: '600', fontSize: '28px', width: '60%' }}>The treasurer who <span className="text-gray-300 italic">needs backup.</span></h3>
+              <div className="text-xs text-white font-semibold uppercase tracking-widest mb-2" style={{ fontFamily: 'Work Sans'}}>FOR GROUPS &amp; COMMUNITIES</div>
+              <h3 className="text-2xl md:w-[50%] w-[80%] font-bold text-white mb-4" style={{ fontFamily: 'Wittgenstein', }}>The treasurer who <span className="text-gray-300 italic">needs backup.</span></h3>
               <p className="text-sm text-white mb-6 leading-relaxed">
-                You're managing money on behalf of people who trust you like a church, a cooperative, an alumni group, an Ajo circle. Gorro takes the weight off your shoulders by distributing governance across three admins, so no single person carries the burden alone.
+                You&apos;re managing money on behalf of people who trust you like a church, a cooperative, an alumni group, an Ajo circle. Gorro takes the weight off your shoulders by distributing governance across three admins, so no single person carries the burden alone.
               </p>
               <ul className="space-y-3 text-sm text-white">
                 {[
@@ -501,16 +543,16 @@ export default function Home() {
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-2 text-center">
           <blockquote className="text-2xl font-bolder sm:text-3xl font-medium text-gray-900 leading-relaxed mb-6 font-semibold" style={{fontFamily:'Wittgenstein'}}>
-            "Community finance has existed for generations. What has been missing is the{' '}
-            <span className="text-[#c8602a] italic" >infrastructure to protect it.</span>"
+            &ldquo;Community finance has existed for generations. What has been missing is the{'   '}
+            <span className="text-[#c8602a] italic" >infrastructure to protect it.</span>&rdquo;
           </blockquote>
           <cite className="text-sm text-gray-500 not-italic">Thomas Agba · Founder, Gorro</cite>
         </div>
       </section>
 
       {/* ── CTA + APP DOWNLOAD ── */}
-      <section className="py-16 bg-[#0a3d2e]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <section id="early-access" className="py-16 bg-[#0a3d2e]">
+        <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left */}
             <div>

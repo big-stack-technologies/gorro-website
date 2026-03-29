@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex justify-between items-center h-20">
 
           {/* Logo */}
@@ -26,35 +26,56 @@ export default function Navbar() {
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center space-x-10">
-            <Link
-              href="/products"
-              className="text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors duration-150"
+            <button
+              onClick={() => {
+                const element = document.getElementById('products');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
             >
               Products
-            </Link>
-            <Link
-              href="/how-it-works"
-              className="text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors duration-150"
+            </button>
+            <button
+              onClick={() => {
+                const element = document.getElementById('how-it-works');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
             >
               How it works
-            </Link>
-            <Link
-              href="/who-its-for"
-              className="text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors duration-150"
+            </button>
+            <button
+              onClick={() => {
+                const element = document.getElementById('who-its-for');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
             >
               Who&apos;s it for
-            </Link>
-          </div>
-
-          {/* CTA Button */}
-          <div className="hidden md:flex items-center">
-            <Link
-              href="/early-access"
+            </button>
+             <button
+              onClick={() => {
+                const element = document.getElementById('early-access');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="bg-[#0a3d2e] hover:bg-[#0d4f3c] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors duration-150"
             >
               Get early access
-            </Link>
+            </button>
           </div>
+
+          {/* CTA Button */}
+          {/* <div className="hidden md:flex items-center">
+            <button
+              onClick={() => {
+                const element = document.getElementById('early-access');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="bg-[#0a3d2e] hover:bg-[#0d4f3c] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors duration-150"
+            >
+              Get early access
+            </button>
+          </div> */}
 
           {/* Mobile menu toggle */}
           <button
@@ -77,35 +98,47 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4 space-y-4">
-          <Link
-            href="/products"
+        <div className="md:hidden text-center border-t border-gray-100 bg-white px-6 py-4 space-y-4">
+          <button
+            onClick={() => {
+              const element = document.getElementById('products');
+              element?.scrollIntoView({ behavior: 'smooth' });
+              setMobileOpen(false);
+            }}
             className="block text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
-            onClick={() => setMobileOpen(false)}
           >
             Products
-          </Link>
-          <Link
-            href="/how-it-works"
+          </button>
+          <button
+            onClick={() => {
+              const element = document.getElementById('how-it-works');
+              element?.scrollIntoView({ behavior: 'smooth' });
+              setMobileOpen(false);
+            }}
             className="block text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
-            onClick={() => setMobileOpen(false)}
           >
             How it works
-          </Link>
-          <Link
-            href="/who-its-for"
+          </button>
+          <button
+            onClick={() => {
+              const element = document.getElementById('who-its-for');
+              element?.scrollIntoView({ behavior: 'smooth' });
+              setMobileOpen(false);
+            }}
             className="block text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
-            onClick={() => setMobileOpen(false)}
           >
             Who&apos;s it for
-          </Link>
-          <Link
-            href="/early-access"
+          </button>
+          <button
+            onClick={() => {
+              const element = document.getElementById('early-access');
+              element?.scrollIntoView({ behavior: 'smooth' });
+              setMobileOpen(false);
+            }}
             className="block w-full text-center bg-[#0a3d2e] hover:bg-[#0d4f3c] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors"
-            onClick={() => setMobileOpen(false)}
           >
             Get early access
-          </Link>
+          </button>
         </div>
       )}
     </nav>

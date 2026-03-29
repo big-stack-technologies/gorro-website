@@ -5,7 +5,7 @@ import { logos, social } from '@/asset/remoteAsset';
 export default function Footer() {
   return (
     <footer className="bg-[#05201A] text-white">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-8">
+      <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-8">
 
         {/* Top section */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 pb-12">
@@ -129,11 +129,11 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               {[
-                { label: 'Gorro Cluster', href: '/products/cluster' },
-                { label: 'Circle savings', href: '/products/circle-savings' },
-                { label: 'Fixed Savings', href: '/products/fixed-savings' },
-                { label: 'Target Savings', href: '/products/target-savings' },
-                { label: 'Gorro Vault', href: '/products/vault' },
+                { label: 'Gorro Cluster', href: '#' },
+                { label: 'Circle savings', href: '#' },
+                { label: 'Fixed Savings', href: '#' },
+                { label: 'Target Savings', href: '#' },
+                { label: 'Gorro Vault', href: '#' },
               ].map(({ label, href }) => (
                 <li key={href}>
                   <Link
@@ -148,7 +148,7 @@ export default function Footer() {
           </div>
 
           {/* Company + Legal combined column */}
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 gap-32">
             {/* Company */}
             <div>
               <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-6">
@@ -156,9 +156,9 @@ export default function Footer() {
               </h3>
               <ul className="space-y-4">
                 {[
-                  { label: 'About Gorro', href: '/about' },
-                  { label: 'For investors', href: '/investors' },
-                  { label: 'Contact us', href: '/contact' },
+                  { label: 'About Gorro', href: '#' },
+                  { label: 'For investors', href: '#' },
+                  { label: 'Contact us', href: '#' },
                 ].map(({ label, href }) => (
                   <li key={href}>
                     <Link
@@ -179,9 +179,9 @@ export default function Footer() {
               </h3>
               <ul className="space-y-4">
                 {[
-                  { label: 'Privacy Policy', href: '/privacy' },
-                  { label: 'Terms of Service', href: '/terms' },
-                  { label: 'Compliance', href: '/compliance' },
+                  { label: 'Privacy Policy', href: '#' },
+                  { label: 'Terms of Service', href: '#' },
+                  { label: 'Compliance', href: '#' },
                 ].map(({ label, href }) => (
                   <li key={href}>
                     <Link
@@ -201,7 +201,7 @@ export default function Footer() {
         <div className="border-t border-[#1e4545]" />
 
         {/* Bottom bar */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 pt-6">
+        <div className="flex flex-col md:flex-row justify-between text-sm items-start md:items-center gap-3 pt-6">
           <p className="text-[#6a9999] text-md">
             © {new Date().getFullYear()} Bigstack Technologies Ltd. All rights reserved.
           </p>
