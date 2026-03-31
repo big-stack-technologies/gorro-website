@@ -44,7 +44,7 @@ export default function Footer() {
             <div className="flex items-center space-x-4">
               {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/company/gorromoney/"
                 aria-label="LinkedIn"
                 className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80"
               >
@@ -74,7 +74,7 @@ export default function Footer() {
 
               {/* Instagram */}
               <a
-                href="#"
+                href="https://www.instagram.com/gorroapp"
                 aria-label="Instagram"
                 className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80"
               >
@@ -89,7 +89,7 @@ export default function Footer() {
 
               {/* X / Twitter */}
               <a
-                href="#"
+                href="https://x.com/gorroapp"
                 aria-label="X (Twitter)"
                 className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80"
               >

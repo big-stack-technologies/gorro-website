@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Gorro",
-  description: "Empowering businesses with innovative solutions that drive growth and efficiency.",
+  description: "Gorro is the savings and treasury platform built for how Nigerians actually manage money together. Save personally. Save as a group. Govern community funds with full transparency.",
 };
 
 export default function RootLayout({
