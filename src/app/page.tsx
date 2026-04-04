@@ -590,7 +590,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <div className="space-y-3 mb-6 flex gap-7 items-center ">
+              <div className="space-y-1 mb-6 flex gap-2 items-center ">
                 <Link
                   href="#"
                   className="flex items-center justify-center gap-3 bg-black text-white  rounded-lg transition-colors duration-200"

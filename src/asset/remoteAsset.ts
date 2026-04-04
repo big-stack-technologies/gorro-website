@@ -38,8 +38,10 @@ export const REMOTE_ASSETS = {
     greenArrowLeft:'https://res.cloudinary.com/dhipowibc/image/upload/v1774570972/left-green_qlrp3v.svg',
     privacy: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775259828/Privacy-policy-checklist_s0pi1i.png',
     termservice: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775260759/term_fpkrrf.png',
-    appStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775263388/download_ksx4fq.png',
-    playStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775263387/google_play_sokhv4.png',
+    // appStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775263388/download_ksx4fq.png',
+    appStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775301599/download-on-apple-store-image-dark_xcewvd.png',
+    // playStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775263387/google_play_sokhv4.png',
+    playStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775301600/download-on-google-play-image-dark_ixg8dd.png',
   },
 
   // Social Media Icons
