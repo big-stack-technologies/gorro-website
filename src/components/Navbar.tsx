@@ -3,10 +3,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { logos } from '@/asset/remoteAsset';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const router = useRouter();
+
+  const scrollToSection = (sectionId: string) => {
+    // Check if we're on the homepage
+    if (window.location.pathname === '/') {
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Navigate to homepage with section hash
+      router.push(`/#${sectionId}`);
+    }
+  };
 
   return (
     <nav className="bg-white border-b border-gray-100">
@@ -27,37 +40,31 @@ export default function Navbar() {
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center space-x-10">
             <button
-              onClick={() => {
-                const element = document.getElementById('products');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              onClick={() => scrollToSection('products')}
               className="text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
             >
               Products
             </button>
             <button
-              onClick={() => {
-                const element = document.getElementById('how-it-works');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              onClick={() => scrollToSection('how-it-works')}
               className="text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
             >
               How it works
             </button>
             <button
-              onClick={() => {
-                const element = document.getElementById('who-its-for');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              onClick={() => scrollToSection('who-its-for')}
               className="text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
             >
               Who&apos;s it for
             </button>
+            {/* <Link
+              href="/faq"
+              className="text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
+            >
+              FAQ
+            </Link> */}
              <button
-              onClick={() => {
-                const element = document.getElementById('early-access');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              onClick={() => scrollToSection('early-access')}
               className="bg-[#0a3d2e] hover:bg-[#0d4f3c] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors duration-150"
             >
               Get early access
@@ -101,8 +108,7 @@ export default function Navbar() {
         <div className="md:hidden text-center border-t border-gray-100 bg-white px-6 py-4 space-y-4">
           <button
             onClick={() => {
-              const element = document.getElementById('products');
-              element?.scrollIntoView({ behavior: 'smooth' });
+              scrollToSection('products');
               setMobileOpen(false);
             }}
             className="block text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
@@ -111,8 +117,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              const element = document.getElementById('how-it-works');
-              element?.scrollIntoView({ behavior: 'smooth' });
+              scrollToSection('how-it-works');
               setMobileOpen(false);
             }}
             className="block text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
@@ -121,18 +126,23 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              const element = document.getElementById('who-its-for');
-              element?.scrollIntoView({ behavior: 'smooth' });
+              scrollToSection('who-its-for');
               setMobileOpen(false);
             }}
             className="block text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
           >
             Who&apos;s it for
           </button>
+          {/* <Link
+            href="/faq"
+            onClick={() => setMobileOpen(false)}
+            className="block text-gray-700 hover:text-[#0a3d2e] text-sm font-medium transition-colors"
+          >
+            FAQ
+          </Link> */}
           <button
             onClick={() => {
-              const element = document.getElementById('early-access');
-              element?.scrollIntoView({ behavior: 'smooth' });
+              scrollToSection('early-access');
               setMobileOpen(false);
             }}
             className="block w-full text-center bg-[#0a3d2e] hover:bg-[#0d4f3c] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors"

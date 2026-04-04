@@ -36,6 +36,10 @@ export const REMOTE_ASSETS = {
     greenCheck: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774567902/greencheck_uwakxu.svg',
     arrowLeft: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774565170/arrow-left_hdpmdc.svg',
     greenArrowLeft:'https://res.cloudinary.com/dhipowibc/image/upload/v1774570972/left-green_qlrp3v.svg',
+    privacy: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775259828/Privacy-policy-checklist_s0pi1i.png',
+    termservice: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775260759/term_fpkrrf.png',
+    appStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775263388/download_ksx4fq.png',
+    playStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775263387/google_play_sokhv4.png',
   },
 
   // Social Media Icons

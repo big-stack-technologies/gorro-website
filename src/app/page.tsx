@@ -568,18 +568,17 @@ export default function Home() {
             {/* Right – download card */}
             <div className="bg-white rounded-2xl p-8">
               <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3">CLOSE YOUR EYES &amp; PICTURE</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4" style={{fontFamily:'Wittgenstein'}}>Download Gorro APK</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4" style={{fontFamily:'Wittgenstein'}}>Download Gorro</h3>
               <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-                Gorro is currently in private beta on the Play Store and App Store. You can join the waitlist to get notified or download the APK for Android directly below.
+                Gorro is currently available on the Play Store and App Store. Download the app to start saving today.
               </p>
               <ul className="space-y-2 text-sm text-gray-600 mb-6">
                 {[
-                  'Download the APK file below',
-                  'Enable "Install from unknown sources" in settings',
-                  'Open the file and install Gorro',
+                  'Download from your preferred app store',
+                  'Install the app on your device',
+                  'Create your account and start saving',
                 ].map(item => (
                   <li key={item} className="flex items-center gap-2">
-                    {/* <svg className="w-4 h-4 text-[#0a3d2e] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> */}
                     <Image
                         src={ui.greenArrowLeft}
                         alt="Arrow"
@@ -591,12 +590,32 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <Link
-                href="/download"
-                className="block w-full bg-[#0a3d2e] hover:bg-[#0d4f3c] text-white text-center py-3 rounded-lg font-semibold transition-colors duration-200"
-              >
-                Download APK
-              </Link>
+              <div className="space-y-3 mb-6 flex gap-7 items-center ">
+                <Link
+                  href="#"
+                  className="flex items-center justify-center gap-3 bg-black text-white  rounded-lg transition-colors duration-200"
+                >
+                  <Image
+                    src={ui.appStore}
+                    alt="Download on App Store"
+                    width={150}
+                    height={30}
+                    className="object-contain"
+                  />
+                </Link>
+                <Link
+                  href="#"
+                  className="flex items-center justify-center gap-3 bg-black  text-white rounded-lg transition-colors duration-200"
+                >
+                  <Image
+                    src={ui.playStore}
+                    alt="Get it on Google Play"
+                    width={150}
+                    height={30}
+                    className="object-contain"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -59,7 +59,9 @@ export default function Footer() {
 
               {/* Facebook */}
               <a
-                href="#"
+                href="https://www.facebook.com/gorroapp"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80"
               >
@@ -104,7 +106,7 @@ export default function Footer() {
 
               {/* TikTok */}
               <a
-                href="#"
+                href="https://www.tiktok.com/@gorroapp"
                 aria-label="TikTok"
                 className="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-80"
               >
@@ -177,11 +179,12 @@ export default function Footer() {
               <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-6">
                 Legal
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-2">
                 {[
-                  { label: 'Privacy Policy', href: '#' },
-                  { label: 'Terms of Service', href: '#' },
-                  { label: 'Compliance', href: '#' },
+                  { label: 'Privacy Policy', href: '/privacy' },
+                  { label: 'Terms of Service', href: '/terms' },
+                  { label: 'FAQs', href: '/faq' },
+                  // { label: 'Compliance', href: '#' },
                 ].map(({ label, href }) => (
                   <li key={href}>
                     <Link
@@ -208,7 +211,7 @@ export default function Footer() {
           {/* <p className="text-[#6a9999] text-xs text-left md:text-right max-w-md"> */}
           <p className="text-[#6a9999] text-md text-left md:text-right">
           {/* <p className="text-[#6a9999] text-[16px] text-left md:text-right"> */}
-            Gorro is not a bank. Savings and treasury services are provided in partnership with Ekondo Microfinance Bank.
+            Gorro is not a bank. Savings and treasury services are provided by Ekondo Microfinance Bank.
           </p>
         </div>
 
