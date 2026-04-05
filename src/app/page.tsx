@@ -164,7 +164,7 @@ export default function Home() {
               <div className="border-l-4 border-l-[#4F8F7A] bg-[#EDF4F2] rounded-xl p-6">
                 <div className="text-xs font-semibold text-[#4F8F7A] uppercase tracking-widest mb-2">FOR INDIVIDUALS</div>
                 <h3 className="font-bold text-gray-900 text-lg mb-1" style={{fontFamily:'Wittgenstein'}}>Save with discipline.</h3>
-                <h3 className="font-bold text-gray-900 text-lg mb-3" style={{fontFamily:'Wittgenstein'}}>Learn with confidence.</h3>
+                <h3 className="font-bold text-gray-900 text-lg mb-3" style={{fontFamily:'Wittgenstein'}}>Earn with confidence.</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                     Fixed savings, target goals, vault plans are structured products that grow your money while you focus on life.
                 </p>
@@ -203,7 +203,7 @@ export default function Home() {
               </div>
               <div className='border-l-4 border-l-[#C65D3B] pl-4 max-w-[600px]'>
                 <p className="text-base md:text-lg text-white mb-2">
-                Every month, a church treasurer collects contributions on WhatsApp, and counts and moves them to a notebook.
+                Every month, a treasurer collects contributions from members and records them in a notebook — posting updates on WhatsApp.
               </p>
               <p className="text-base md:text-lg text-white mb-4">
                 Every month, an Ajo group relies on one person's memory to keep everything straight.
@@ -216,7 +216,7 @@ export default function Home() {
             <div className="space-y-3" ref={cardsRef}>
               {[
                 { icon: features.noPermanent, color: 'bg-white ', title: 'No permanent records', desc: 'Groups lack a shared memory for all financial history, often relying on one person to remember.' },
-                { icon: features.onePerson, color: 'bg-white ', title: 'One person holds everything', desc: 'One trusted person controls contributions, distributions and decisions.' },
+                // { icon: features.onePerson, color: 'bg-white ', title: 'One person holds everything', desc: 'One trusted person controls contributions, distributions and decisions.' },
                 { icon: features.dispute, color: 'bg-white ', title: 'Disputes with no trail', desc: 'When conflict arises, there are no records. Trust breaks down and money follows.' },
                 { icon: features.memberSee, color: 'bg-white ', title: "Members can't see anything", desc: 'Contributors have no visibility into how their group funds are managed or spent.' },
               ].map((item) => (
@@ -334,7 +334,7 @@ export default function Home() {
               <div className="inline-block bg-[#4F8F7A] text-white text-xs font-semibold px-3 py-1 rounded-full mb-4 ">ROTATIONAL SAVINGS</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{fontFamily:'Wittgenstein'}}>Ajo by Gorro</h3>
               <p className="text-sm text-gray-600 mb-5 leading-relaxed">
-                The rotational savings system you already know being digitalized. Automated contributions, scheduled payouts, transparent records. The trust stays. The paperwork disappears.
+                The rotational savings system you already know, now digitised. Automated contributions, scheduled payouts, transparent records. The trust stays. The paperwork disappears.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 {['Automated rotation scheduling', 'Full contribution history', 'Member participation tracking'].map(item => (
@@ -567,7 +567,7 @@ export default function Home() {
             </div>
             {/* Right – download card */}
             <div className="bg-white rounded-2xl p-8">
-              <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3">CLOSE YOUR EYES &amp; PICTURE</div>
+              {/* <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3">CLOSE YOUR EYES &amp; PICTURE</div> */}
               <h3 className="text-xl font-bold text-gray-900 mb-4" style={{fontFamily:'Wittgenstein'}}>Download Gorro</h3>
               <p className="text-sm text-gray-600 mb-6 leading-relaxed">
                 Gorro is currently available on the Play Store and App Store. Download the app to start saving today.
