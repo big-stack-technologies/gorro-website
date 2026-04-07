@@ -175,7 +175,7 @@ export default function Home() {
                 <h3 className="font-bold text-gray-900 text-lg mb-3" style={{fontFamily:'Wittgenstein'}}>A treasury your whole group can trust.</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {/* Manage contributions, approvals, and payouts transparently — so no single member holds all the power, and the community wins together. */}
-                  Cluster brings three-admin governance, a transparent ledger, and dispute protection to any community fund e.g church, cooperative, alumni, or Ajo group.
+                  Cluster brings three-admin governance, a transparent ledger, and dispute protection to any community fund e.g church group, cooperative or alumni.
                 </p>
               </div>
             </div>
