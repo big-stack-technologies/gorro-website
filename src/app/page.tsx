@@ -560,16 +560,17 @@ export default function Home() {
                 Be among the<br />first to use <span className="italic text-gray-300">Gorro.</span>
               </h2>
               <p className="text-[#a8c5c5] text-sm leading-relaxed mb-6">
-                Gorro is in early access and we're inviting a select group of users to experience the platform before public launch. Download the APK, install it on your Android device, and start saving today.
+                {/* Gorro is in early access and we're inviting a select group of users to experience the platform before public launch. Download the APK, install it on your Android device, and start saving today. */}
+                Gorro is now live and we're inviting you to be among the first to experience the platform. Download the app, create your account, and start saving today.
               </p>
-              <p className="text-[#a8c5c5] text-sm ">Available on iOS — Android coming soon</p>
+              <p className="text-[#a8c5c5] text-sm ">Available on the App Store and Google Play Store</p>
             </div>
             {/* Right – download card */}
             <div className="bg-white rounded-2xl p-8">
               {/* <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3">CLOSE YOUR EYES &amp; PICTURE</div> */}
               <h3 className="text-xl font-bold text-gray-900 mb-4" style={{fontFamily:'Wittgenstein'}}>Download Gorro</h3>
               <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-                Gorro is currently available on the Play Store and App Store. Download the app to start saving today.
+                Gorro is currently available on the Google Play Store and App Store. Download the app to start saving today.
               </p>
               <ul className="space-y-2 text-sm text-gray-600 mb-6">
                 {[
