@@ -264,7 +264,7 @@ export default function Home() {
               <p className="text-sm text-gray-600 mb-6 leading-relaxed">
                 A structured digital treasury for any organised group. Three verified admins must co-approve every withdrawal. Every transaction is permanently recorded and visible to all members in real time. No one person holds the keys.
               </p>
-              <div className="text-sm font-semibold text-gray-900 mb-3">One person holds everything</div>
+              {/* <div className="text-sm font-semibold text-gray-900 mb-3">One person holds everything</div> */}
               <ul className="space-y-2 text-sm text-gray-600">
                 {[
                   'Three-admin co-approval for all withdrawals',
