@@ -293,7 +293,6 @@ export default function Home() {
             <div className=" overflow-hidden min-h-[300px] relative">
               {/* <div className="absolute inset-0 bg-gradient-to-br from-[#0a3d2e]/20 to-transparent z-10"></div> */}
               <div className="w-full h-full  flex items-center justify-centerl">
-                {/* <span className="text-6xl">🤝</span> */}
                  <Image
                         src={hero.gorroCluster}
                         alt="Gorro Cluster"
@@ -334,7 +333,7 @@ export default function Home() {
               <div className="inline-block bg-[#4F8F7A] text-white text-xs font-semibold px-3 py-1 rounded-full mb-4 ">ROTATIONAL SAVINGS</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{fontFamily:'Wittgenstein'}}>Ajo by Gorro</h3>
               <p className="text-sm text-gray-600 mb-5 leading-relaxed">
-                The rotational savings system you already know, now digitised. Automated contributions, scheduled payouts, transparent records. The trust stays. The paperwork disappears.
+                The rotational savings system you already know &mdash; now digitised. Automated contributions, scheduled payouts, transparent records. The trust stays. The paperwork disappears.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 {['Automated rotation scheduling', 'Full contribution history', 'Member participation tracking'].map(item => (
