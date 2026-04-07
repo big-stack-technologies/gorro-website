@@ -426,7 +426,7 @@ export default function Home() {
             {/* Steps */}
             <div className="space-y-6 items-center  justify-center text-center">
               {[
-                { num: '01', title: 'Download the app', desc: 'Get the Gorro APK for Android. Install it in seconds. No app store required.', divider: "" },
+                { num: '01', title: 'Download the app', desc: 'Get the Gorro App on the Play Store and App Store. Install it in seconds.', divider: "" },
                 { num: '02', title: 'Create your account', desc: 'Sign up and complete a quick identity verification. Takes about two minutes.', divider: "" },
                 { num: '03', title: 'Open your wallet', desc: 'Your Gorro wallet is your financial home. Fund it and you\'re ready to save.',  divider: ""  },
                 { num: '04', title: 'Start saving your way', desc: 'Choose a savings product, join or create a group, or set up your Cluster treasury.',   },
