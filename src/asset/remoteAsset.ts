@@ -6,7 +6,7 @@ export const REMOTE_ASSETS = {
   logos: {
     navbar: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774476816/logo_yozjyp.svg',
     footer: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774476815/logo_white_spiuwx.svg',
-    icon:'https://res.cloudinary.com/dhipowibc/image/upload/v1775772957/Gorro_App_Icon_zz3etd.png',
+    icon:'https://res.cloudinary.com/dhipowibc/image/upload/v1775864043/Gorro_App_Icon_onenlp.svg',
   },
 
   // Hero Section Images
