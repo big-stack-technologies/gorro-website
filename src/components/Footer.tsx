@@ -158,7 +158,7 @@ export default function Footer() {
               </h3>
               <ul className="space-y-4">
                 {[
-                  { label: 'About Gorro', href: '#' },
+                  { label: 'About Gorro', href: '/about' },
                   { label: 'For investors', href: '#' },
                   { label: 'Contact us', href: '#' },
                 ].map(({ label, href }) => (

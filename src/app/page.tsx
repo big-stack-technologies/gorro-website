@@ -124,8 +124,9 @@ export default function Home() {
                 Save as a group. Govern community funds with full transparency.
               </p>
               <div className="flex flex-wrap gap-6 text-sm text-gray-700 mb-8 block items-center text-center justify-center md:justify-start md:items-center ">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+                <div className="flex items-center gap-2 text-start">
+                  {/* <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center"> */}
+                  <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center ">
                     <Image
                       src={features.bank}
                       alt="Bank-Backed"
@@ -135,11 +136,11 @@ export default function Home() {
                     />
                   </div>
                   <div>
-                    <div className="font-semibold">Bank-Backed</div>
-                    <div className="text-xs text-gray-400">Licensed &amp; Regulated</div>
+                    <div className="font-semibold">Banking by Ekondo MFB</div>
+                    <div className="text-xs text-gray-400">CBN Licensed</div>
                   </div>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 text-start">
                   <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
                     <Image
                       src={features.secure}
@@ -151,7 +152,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="font-semibold">100% Secure</div>
-                    <div className="text-xs text-gray-400">Your money is safe</div>
+                    <div className="text-xs text-gray-400">Bank-grade protection</div>
                   </div>
                 </div>
               </div>

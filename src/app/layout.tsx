@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   title: "Gorro",
   description: "Gorro is the savings and treasury platform built for how Nigerians actually manage money together. Save personally. Save as a group. Govern community funds with full transparency.",
   icons: {
-    icon: logos.navbar,
-    shortcut: logos.navbar,
-    apple: logos.navbar,
+    icon: logos.icon,
+    shortcut: logos.icon,
+    apple: logos.icon,
   },
 };
 
