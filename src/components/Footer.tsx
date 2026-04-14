@@ -41,7 +41,95 @@ export default function Footer() {
             </p>
 
             {/* Social Icons */}
-            <div className="flex items-center space-x-4">
+           
+          </div>
+
+          {/* Spacer on large screens */}
+          {/* <div className="hidden lg:block" /> */}
+
+          {/* Products Column */}
+          <div>
+            <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-6">
+              Products
+            </h3>
+            <ul className="space-y-4">
+              {[
+                { label: 'Gorro Cluster', href: '#' },
+                { label: 'Circle savings', href: '#' },
+                { label: 'Fixed Savings', href: '#' },
+                { label: 'Target Savings', href: '#' },
+                { label: 'Gorro Vault', href: '#' },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <Link
+                    href={href}
+                    className="text-[#c8dcdc] text-sm hover:text-white"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company + Legal combined column */}
+          <div className="grid grid-cols-2 gap-32">
+            {/* Company */}
+            <div>
+              <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-6">
+                Company
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  { label: 'About Gorro', href: '/about' },
+                  // { label: 'For investors', href: '#' },
+                   { label: 'FAQs', href: '/faq' },
+                  // { label: 'Contact us', href: '#' },
+                ].map(({ label, href }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-6">
+                Legal
+              </h3>
+              <ul className="space-y-2">
+                {[
+                  { label: 'Privacy Policy', href: '/privacy' },
+                  { label: 'Terms of Service', href: '/terms' },
+                  // { label: 'Compliance', href: '#' },
+                ].map(({ label, href }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            
+          </div>
+            {/* Contact Column */}
+          <div>
+            <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-3">
+              Contact
+            </h3>
+                {/* Social */}
+             <div className="flex items-center space-x-4 mb-2">
               {/* LinkedIn */}
               <a
                 href="https://www.linkedin.com/company/gorromoney/"
@@ -119,84 +207,33 @@ export default function Footer() {
                 />
               </a>
             </div>
-          </div>
+            <ul className="space-y-3">
+              {/* Address */}
+              <li className="text-[#c8dcdc] text-sm leading-relaxed">
+               J43 Rd 3, VGC, Lekki Ekpe Expy<br />
+                Lagos, Nigeria.
+              </li>
 
-          {/* Spacer on large screens */}
-          {/* <div className="hidden lg:block" /> */}
+              {/* Email */}
+              <li>
+                <a
+                  href="mailto:support@gorro.ng"
+                  className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
+                >
+                  support@gorro.ng
+                </a>
+              </li>
 
-          {/* Products Column */}
-          <div>
-            <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-6">
-              Products
-            </h3>
-            <ul className="space-y-4">
-              {[
-                { label: 'Gorro Cluster', href: '#' },
-                { label: 'Circle savings', href: '#' },
-                { label: 'Fixed Savings', href: '#' },
-                { label: 'Target Savings', href: '#' },
-                { label: 'Gorro Vault', href: '#' },
-              ].map(({ label, href }) => (
-                <li key={href}>
-                  <Link
-                    href={href}
-                    className="text-[#c8dcdc] text-sm hover:text-white"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
+              {/* Phone */}
+              <li>
+                <a
+                  href="tel:+2340000000000"
+                  className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
+                >
+                  +234 811 001 1847
+                </a>
+              </li>
             </ul>
-          </div>
-
-          {/* Company + Legal combined column */}
-          <div className="grid grid-cols-2 gap-32">
-            {/* Company */}
-            <div>
-              <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-6">
-                Company
-              </h3>
-              <ul className="space-y-4">
-                {[
-                  { label: 'About Gorro', href: '/about' },
-                  { label: 'For investors', href: '#' },
-                  { label: 'Contact us', href: '#' },
-                ].map(({ label, href }) => (
-                  <li key={href}>
-                    <Link
-                      href={href}
-                      className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Legal */}
-            <div>
-              <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-6">
-                Legal
-              </h3>
-              <ul className="space-y-2">
-                {[
-                  { label: 'Privacy Policy', href: '/privacy' },
-                  { label: 'Terms of Service', href: '/terms' },
-                  { label: 'FAQs', href: '/faq' },
-                  // { label: 'Compliance', href: '#' },
-                ].map(({ label, href }) => (
-                  <li key={href}>
-                    <Link
-                      href={href}
-                      className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
 

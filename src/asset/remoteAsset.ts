@@ -16,6 +16,7 @@ export const REMOTE_ASSETS = {
     womanSaving: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481371/woman_phone_u7twa3.svg',
     aboveMan: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481336/highlight_12_kbhc2b.svg',
     belowWoman: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481335/claude_lyffyy.svg',
+    mobile:'https://res.cloudinary.com/dhipowibc/image/upload/v1776198537/Mockup_iPhone_X_fjkk5e.svg', 
   },
 
   // Feature Icons

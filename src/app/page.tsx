@@ -107,8 +107,9 @@ export default function Home() {
     <div className="flex-1 bg-white">
 
       {/* ── HERO ── */}
-      <section className="bg-white" ref={heroRef}>
-        <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-16">
+      <section className="bg-white relative" ref={heroRef}>
+        {/* <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-12 pt-16 pb-16"> */}
+        <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-12 pt-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
             {/* Left */}
@@ -137,7 +138,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="font-semibold">Banking by Ekondo MFB</div>
-                    <div className="text-xs text-gray-400">CBN Licensed</div>
+                    <div className="text-xs text-center items-center text-gray-400">CBN Licensed</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-2 text-start">
@@ -151,8 +152,10 @@ export default function Home() {
                     />
                   </div>
                   <div>
-                    <div className="font-semibold">100% Secure</div>
-                    <div className="text-xs text-gray-400">Bank-grade protection</div>
+                    {/* <div className="font-semibold">100% Secure</div> */}
+                    <div className="font-semibold">Bank-grade protection</div>
+                    <div className="text-xs text-center items-center text-gray-400">100% Secure</div>
+                    {/* <div className="text-xs text-gray-400"></div> */}
                   </div>
                 </div>
               </div>
@@ -182,6 +185,28 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+         {/* button middle */}
+              {/* <div className="flex  items-center justify-center  ">
+                <Image
+                    src={hero.mobile}
+                    alt="mobile view"
+                    width={500}
+                    height={400}
+                    className="object-contain  "
+                  />
+              </div> */}
+
+              {/* <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[-120px] z-10"> */}
+              <div className="flex   items-center justify-center  ">
+                <Image
+                  src={hero.mobile}
+                  alt="mobile view"
+                  width={400}
+                  height={400}
+                  className="object-contain"
+                />
+              </div>
       </section>
 
       {/* ── PROBLEM SECTION ── */}
