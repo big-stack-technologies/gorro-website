@@ -138,7 +138,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="font-semibold">Banking by Ekondo MFB</div>
-                    <div className="text-xs text-center items-center text-gray-400">CBN Licensed</div>
+                    <div className="text-xs  text-gray-400">CBN Licensed</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-2 text-start">
@@ -146,15 +146,15 @@ export default function Home() {
                     <Image
                       src={features.secure}
                       alt="Secure"
-                      width={20}
-                      height={20}
+                      width={15}
+                      height={15}
                       className="object-contain"
                     />
                   </div>
                   <div>
                     {/* <div className="font-semibold">100% Secure</div> */}
                     <div className="font-semibold">Bank-grade protection</div>
-                    <div className="text-xs text-center items-center text-gray-400">100% Secure</div>
+                    <div className="text-xs  text-gray-400">100% Secure</div>
                     {/* <div className="text-xs text-gray-400"></div> */}
                   </div>
                 </div>
@@ -204,7 +204,8 @@ export default function Home() {
                   alt="mobile view"
                   width={400}
                   height={400}
-                  className="object-contain"
+                  className="object-contain w-[320px] sm:w-[350px] md:w-[400px]"
+                  // className="object-contain"
                 />
               </div>
       </section>
@@ -386,11 +387,13 @@ export default function Home() {
             <h3 className="text-xl font-bold text-gray-900 mb-1" style={{ fontFamily: 'Wittgenstein', fontWeight: '600', fontSize: '28px', lineHeight: '34px', letterSpacing: '-2%', verticalAlign: 'middle' }}>Individual Savings</h3>
             <p className="text-sm text-gray-500 mb-6" style={{ fontFamily: 'Work Sans', fontWeight: '400', fontSize: '16px', lineHeight: '24px' }}>Three ways to grow your money. Each designed for a different life stage and a different relationship with savings.</p>
           </div>
+          {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-5"> */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
               { color: 'bg-[#E3EFFC]', border: '1px solid #1671D9', accent: 'text-[#272A2A]', icon: features.fixedSaving, title: 'Fixed Savings', desc: 'Lock money for a set period. Earn interest when it matures. Simple, committed, rewarding.' },
               { color: 'bg-[#EDF4F2]', border: '1px solid #4F8F7A', accent: 'text-[#272A2A]', icon: features.targetSaving, title: 'Target Savings', desc: 'Set a goal. Set a pace. Gorro auto-saves for you and accrues interest daily until you get there.' },
               { color: 'bg-[#FFFBEB]', border: '1px solid #F59E0B', accent: 'text-[#272A2A]', icon: features.gorroVault, title: 'Gorro Vault', desc: 'Lock your money. Collect your interest upfront. The full return hits your wallet the moment you commit.' },
+              // { color: 'bg-[#FFFBEB]', border: '1px solid #F59E0B', accent: 'text-[#272A2A]', icon: features.gorroVault, title: 'Smart Wallet', desc: 'Lock your money. Collect your interest upfront. The full return hits your wallet the moment you commit.' },
             ].map(item => (
               <div key={item.title} className={`${item.color} rounded-2xl p-6`} style={{ border: item.border }}>
                 <div className="block items-center gap-4 mb-3">
