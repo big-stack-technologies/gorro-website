@@ -137,7 +137,7 @@ export default function Home() {
                     />
                   </div>
                   <div>
-                    <div className="font-semibold">Banking by Ekondo MFB</div>
+                    <div className="font-semibold">Banking by Partner MFB</div>
                     <div className="text-xs  text-gray-400">CBN Licensed</div>
                   </div>
                 </div>
