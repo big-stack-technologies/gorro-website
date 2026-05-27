@@ -132,7 +132,7 @@ const faqData: FAQItem[] = [
   {
     id: 'delete-account',
     question: 'How can I delete my account?',
-    answer: 'You can delete your account by: Navigating to Profile &rarr; Close Account within the app OR Sending a request to our support email.',
+    answer: 'You can delete your account by: Navigating to Account > Close Account within the app OR Sending a request to our support email.',
     category: 'Account Deletion & Data Privacy'
   },
   {

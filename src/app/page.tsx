@@ -137,7 +137,7 @@ export default function Home() {
                     />
                   </div>
                   <div>
-                    <div className="font-semibold">Banking by Partner MFB</div>
+                    <div className="font-semibold">Banking by Ekondo MFB</div>
                     <div className="text-xs  text-gray-400">CBN Licensed</div>
                   </div>
                 </div>
@@ -233,10 +233,10 @@ export default function Home() {
                 Every month, a treasurer collects contributions from members and records them in a notebook — posting updates on WhatsApp.
               </p>
               <p className="text-base md:text-lg text-white mb-4">
-                Every month, an Ajo group relies on one person's memory to keep everything straight.
+                {`Every month, an Ajo group relies on one person's memory to keep everything straight.`}
               </p>
               <p className="text-base md:text-lg text-[#D17D62]">
-                Billions of naira move through these networks with nothing more than trust and a WhatsApp group to hold it all together.
+                {`Billions of naira move through these networks with nothing more than trust and a WhatsApp group to hold it all together.`}
               </p>
               </div>
             </div>
@@ -337,7 +337,7 @@ export default function Home() {
               <div className="inline-block bg-[#4F8F7A] text-white text-xs font-bold px-3 py-1 rounded-full mb-4">GROUP SAVINGS</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{fontFamily:'Wittgenstein'}}>Circle Savings</h3>
               <p className="text-sm text-gray-600 mb-5 leading-relaxed">
-                Save collectively towards a shared goal. From friends, to family, and even colleagues, everyone contributes at their own pace, with full visibility into the group's progress.
+                {`Save collectively towards a shared goal. From friends, to family, and even colleagues, everyone contributes at their own pace, with full visibility into the group's progress.`}
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 {['Private or public circles', 'Shared progress visible to all', 'Your contributions, your withdrawal'].map(item => (
@@ -512,7 +512,7 @@ export default function Home() {
               <div className="text-xs text-white font-semibold uppercase tracking-widest mb-2" style={{ fontFamily: 'Work Sans'}}>FOR INDIVIDUALS</div>
               <h3 className="text-2xl md:w-[50%] w-[70%]  font-bold text-white mb-4" style={{ fontFamily: 'Wittgenstein'}}>The disciplined <span className="text-gray-300 italic">personal saver.</span></h3>
               <p className="text-sm text-white mb-6 leading-relaxed">
-                You have goals. Maybe it's a new device, a trip, an emergency fund, or just the discipline to save consistently every month. Gorro gives you the structure to get there and interest that rewards you for staying committed.
+                {`You have goals. Maybe it's a new device, a trip, an emergency fund, or just the discipline to save consistently every month. Gorro gives you the structure to get there and interest that rewards you for staying committed.`}
               </p>
               <ul className="space-y-3 text-sm text-white">
                 {[
@@ -590,7 +590,7 @@ export default function Home() {
               </h2>
               <p className="text-[#a8c5c5] text-sm leading-relaxed mb-6">
                 {/* Gorro is in early access and we're inviting a select group of users to experience the platform before public launch. Download the APK, install it on your Android device, and start saving today. */}
-                Gorro is now live and we're inviting you to be among the first to experience the platform. Download the app, create your account, and start saving today.
+                {`Gorro is now live and we're inviting you to be among the first to experience the platform. Download the app, create your account, and start saving today.`}
               </p>
               <p className="text-[#a8c5c5] text-sm ">Available on the App Store and Google Play Store</p>
             </div>

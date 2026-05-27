@@ -41,10 +41,10 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>1. About Gorro</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Gorro is a community finance infrastructure platform developed and operated by Bigstack Technologies Ltd, and sponsored by Partner Microfinance Bank.
+                Gorro is a community finance infrastructure platform developed and operated by Bigstack Technologies Ltd, and sponsored by Ekondo Microfinance Bank.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Gorro provides savings, group treasury management, and credit access services provided by Partner Microfinance Bank, a licensed microfinance bank regulated by the Central Bank of Nigeria (CBN). All banking and financial services on the Gorro platform are delivered by Partner MFB.
+                Gorro provides savings, group treasury management, and credit access services provided by Ekondo Microfinance Bank, a licensed microfinance bank regulated by the Central Bank of Nigeria (CBN). All banking and financial services on the Gorro platform are delivered by Ekondo MFB.
               </p>
             </section>
 
@@ -108,7 +108,7 @@ export default function TermsOfService() {
                 Upon successful account creation and KYC verification, a Gorro Savings Wallet will be opened for you. Your wallet is your primary financial account on the platform and is the gateway to all Gorro savings products and group features.
               </p>
               <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-4">
-                <li>Your wallet balance is held in trust by Partner Microfinance Bank and is protected under the bank&apos;s licence.</li>
+                <li>Your wallet balance is held in trust by Ekondo Microfinance Bank and is protected under the bank&apos;s licence.</li>
                 <li>All wallet transactions are permanently recorded in an immutable ledger.</li>
                 <li>You may fund your wallet via bank transfer or other payment methods supported by the platform.</li>
                 <li>Withdrawals from your wallet are processed to any registered Nigerian bank account.</li>
@@ -244,7 +244,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>9. Credit and Loan Products</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Loan products available on the Gorro platform are offered by Partner Microfinance Bank under its regulatory licence. By applying for a loan through Gorro, you agree to:
+                Loan products available on the Gorro platform are offered by Ekondo Microfinance Bank under its regulatory licence. By applying for a loan through Gorro, you agree to:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-gray-600">
                 <li>Provide accurate information in your loan application.</li>
@@ -253,7 +253,7 @@ export default function TermsOfService() {
                 <li>Repay the loan in accordance with the agreed repayment schedule.</li>
               </ul>
               <p className="text-gray-600 mt-4 leading-relaxed">
-                Loan origination and servicing are subject to the specific terms and conditions communicated by Partner Microfinance Bank at the time of application. Bigstack Technologies Ltd earns fees in connection with loan origination and servicing but is not the lender.
+                Loan origination and servicing are subject to the specific terms and conditions communicated by Ekondo Microfinance Bank at the time of application. Bigstack Technologies Ltd earns fees in connection with loan origination and servicing but is not the lender.
               </p>
             </section>
 
@@ -347,7 +347,7 @@ export default function TermsOfService() {
                 <strong>Company:</strong> Bigstack Technologies Ltd
               </p>
               <p className="text-gray-600">
-                <strong>Banking Partner:</strong> Partner Microfinance Bank (Licensed by CBN)
+                <strong>Banking Partner:</strong> Ekondo Microfinance Bank (Licensed by CBN)
               </p>
             </div>
           </div>

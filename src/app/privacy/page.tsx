@@ -41,10 +41,10 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>1. Who We Are</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Gorro is a community finance infrastructure platform developed and operated by Bigstack Technologies Ltd, and sponsored by Partner Microfinance Bank.
+                Gorro is a community finance infrastructure platform developed and operated by Bigstack Technologies Ltd, and sponsored by  Ekondo Microfinance Bank.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Gorro provides savings, group treasury management, and credit access services provided by Partner Microfinance Bank, a licensed microfinance bank regulated by the Central Bank of Nigeria (CBN). All banking and financial services on the Gorro platform are delivered by Partner MFB.
+                Gorro provides savings, group treasury management, and credit access services provided by  Ekondo Microfinance Bank, a licensed microfinance bank regulated by the Central Bank of Nigeria (CBN). All banking and financial services on the Gorro platform are delivered by Ekondo MFB.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 For any privacy-related enquiries, you may contact us at: <a href="mailto:privacy@gorro.ng" className="text-[#0a3d2e] hover:underline">privacy@gorro.ng</a>
@@ -88,7 +88,7 @@ export default function PrivacyPolicy() {
                     <li>Identity verification data from licensed identity verification providers.</li>
                     <li>Credit information from CRC Credit Bureau, used to assess creditworthiness for loan products.</li>
                     <li>Payment and transaction data from our payment service providers, Paystack and Fincra.</li>
-                    <li>Banking and account data from Partner Microfinance Bank in connection with the delivery of financial services on the platform.</li>
+                    <li>Banking and account data from  Ekondo Microfinance Bank in connection with the delivery of financial services on the platform.</li>
                   </ul>
                 </div>
 
@@ -117,7 +117,7 @@ export default function PrivacyPolicy() {
                 <li>Verify your identity and carry out Know Your Customer (KYC) checks as required by applicable regulations.</li>
                 <li>Provide, operate, and improve the Gorro platform and all its features.</li>
                 <li>Process your transactions, savings plans, group contributions, and withdrawals.</li>
-                <li>Assess your eligibility for credit products through our banking partner, Partner Microfinance Bank.</li>
+                <li>Assess your eligibility for credit products through our banking partner,  Ekondo Microfinance Bank.</li>
                 <li>Report credit activity to CRC Credit Bureau as required by law and in accordance with your agreement to our terms.</li>
                 <li>Send you transaction notifications, account updates, security alerts, and service-related communications.</li>
                 <li>Respond to your enquiries and provide customer support.</li>
@@ -153,7 +153,7 @@ export default function PrivacyPolicy() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">5.1 With Our Banking and Financial Partners</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    We share necessary personal and financial data with Partner Microfinance Bank for the purpose of delivering regulated financial services — including savings products, loan disbursements, and account management — on the Gorro platform.
+                    We share necessary personal and financial data with  Ekondo Microfinance Bank for the purpose of delivering regulated financial services — including savings products, loan disbursements, and account management — on the Gorro platform.
                   </p>
                 </div>
 
@@ -296,7 +296,7 @@ export default function PrivacyPolicy() {
                 <strong>Company:</strong> Bigstack Technologies Ltd
               </p>
               <p className="text-gray-600">
-                <strong>Banking Partner:</strong> Partner Microfinance Bank (Licensed by CBN)
+                <strong>Banking Partner:</strong>  Ekondo Microfinance Bank (Licensed by CBN)
               </p>
             </div>
           </div>

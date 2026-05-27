@@ -37,7 +37,7 @@ export default function Footer() {
             {/* Sponsor note */}
             <p className="text-[#6a9999] text-xs leading-relaxed mb-8">
               A product of Bigstack Technologies Ltd ·<br />
-              Sponsored by Partner Microfinance Bank
+              Sponsored by  Ekondo Microfinance Bank
             </p>
 
             {/* Social Icons */}
@@ -248,7 +248,7 @@ export default function Footer() {
           {/* <p className="text-[#6a9999] text-xs text-left md:text-right max-w-md"> */}
           <p className="text-[#6a9999] text-md text-left md:text-right">
           {/* <p className="text-[#6a9999] text-[16px] text-left md:text-right"> */}
-            Gorro is not a bank. Savings and treasury services are provided by Partner Microfinance Bank.
+            Gorro is not a bank. Savings and treasury services are provided by  Ekondo Microfinance Bank.
           </p>
         </div>
 
