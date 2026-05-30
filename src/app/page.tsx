@@ -633,7 +633,7 @@ export default function Home() {
                   />
                 </Link>
                 <Link
-                  href="#"
+                  href="https://play.google.com/store/apps/details?id=com.gorro.app"
                   className="flex items-center justify-center gap-3 bg-black  text-white rounded-lg transition-colors duration-200"
                 >
                   <Image
