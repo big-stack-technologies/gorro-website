@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
             <div>
               <h2 className="text-2xl font-bold text-white mb-2" style={{ fontFamily: 'Wittgenstein' }}>GORRO</h2>
               <h1 className="text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: 'Wittgenstein' }}>Privacy Policy</h1>
-              <p className="text-[#a8c5c5] text-sm mb-6">Effective Date: 12th April 2026  ·  Version 1.0</p>
+              <p className="text-[#a8c5c5] text-sm mb-6">Effective Date: 1st June 2026  ·  Version 1.0</p>
               <p className="text-[#a8c5c5] text-lg mb-6 leading-relaxed">
                 This Privacy Policy explains how Gorro (&quot;Gorro&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, uses, stores, shares, and protects your personal information when you use the Gorro platform, including our mobile application, website, and all associated services. Please read this policy carefully before using Gorro.
               </p>

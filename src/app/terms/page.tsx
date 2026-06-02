@@ -12,7 +12,7 @@ export default function TermsOfService() {
             <div>
               <h2 className="text-2xl font-bold text-white mb-2" style={{ fontFamily: 'Wittgenstein' }}>GORRO</h2>
               <h1 className="text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: 'Wittgenstein' }}>Terms of Service</h1>
-              <p className="text-[#a8c5c5] text-sm mb-6">Effective Date: 12th April 2026  ·  Version 1.0</p>
+              <p className="text-[#a8c5c5] text-sm mb-6">Effective Date: 1st June 2026  ·  Version 1.0</p>
               <p className="text-[#a8c5c5] text-lg mb-6 leading-relaxed">
                 These Terms of Service (&quot;Terms&quot;) govern your access to and use of the Gorro platform, including the Gorro mobile application, website, and all associated financial services. By creating an account or using Gorro in any way, you agree to be bound by these Terms. Please read them carefully.
               </p>
