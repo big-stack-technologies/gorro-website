@@ -126,7 +126,7 @@ export default function Footer() {
             {/* Contact Column */}
           <div>
             <h3 className="text-xs font-semibold text-[#a8c5c5] uppercase tracking-widest mb-3">
-              Contact
+              Support
             </h3>
                 {/* Social */}
              <div className="flex items-center space-x-4 mb-2">
@@ -215,6 +215,14 @@ export default function Footer() {
               </li>
 
               {/* Email */}
+              <li>
+                <a
+                  href="/contact"
+                  className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
+                >
+                  Contact Us
+                </a>
+              </li>
               <li>
                 <a
                   href="mailto:support@gorro.ng"

@@ -204,7 +204,7 @@ export default function Home() {
                   alt="mobile view"
                   width={400}
                   height={400}
-                  className="object-contain w-[320px] sm:w-[350px] md:w-[400px]"
+                  className="object-contain w-[320px] sm:w-[350px] md:w-[400px] h-auto"
                   // className="object-contain"
                 />
               </div>

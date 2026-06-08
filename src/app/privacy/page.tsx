@@ -25,6 +25,7 @@ export default function PrivacyPolicy() {
                   width={600}
                   height={700}
                   className="object-contain max-w-full h-auto"
+                  loading="eager"
                 />
               </div>
             </div>
