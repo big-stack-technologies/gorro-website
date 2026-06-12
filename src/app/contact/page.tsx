@@ -78,13 +78,47 @@ export default function ContactPage() {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setStatus('sending');
+  //   // Simulate submission — wire to your real endpoint
+  //   await new Promise(res => setTimeout(res, 1800));
+  //   setStatus('sent');
+  // };
+
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('sending');
-    // Simulate submission — wire to your real endpoint
-    await new Promise(res => setTimeout(res, 1800));
-    setStatus('sent');
-  };
+  e.preventDefault();
+  setStatus('sending');
+
+  try {
+    const response = await fetch('https://gorro.online/tickets', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: form.email,
+        fullName: form.name,
+        subject: form.subject,
+        message: form.message,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to submit ticket');
+    }
+
+    const data = await response.json();
+    if (data.ok) {
+      setStatus('sent');
+    } else {
+      throw new Error(data.message || 'Failed to submit ticket');
+    }
+  } catch (error) {
+    console.error('Error submitting ticket:', error);
+    setStatus('error');
+  }
+};
 
   return (
     <div className="flex-1 bg-white">
