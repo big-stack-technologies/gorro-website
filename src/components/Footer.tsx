@@ -29,15 +29,12 @@ export default function Footer() {
                Save personally. Save together.<br />
               Govern transparently.
             </p>
-            {/* <p className="text-white text-sm font-semibold leading-relaxed mb-6">
-              Save personally. Save together.<br />
-              Govern transparently.
-            </p> */}
+          
 
             {/* Sponsor note */}
             <p className="text-[#6a9999] text-xs leading-relaxed mb-8">
               A product of Bigstack Technologies Ltd ·<br />
-              Sponsored by  Ekondo Microfinance Bank
+              {/* Sponsored by  Ekondo Microfinance Bank */}
             </p>
 
             {/* Social Icons */}
@@ -253,11 +250,9 @@ export default function Footer() {
           <p className="text-[#6a9999] text-md">
             © {new Date().getFullYear()} Bigstack Technologies Ltd. All rights reserved.
           </p>
-          {/* <p className="text-[#6a9999] text-xs text-left md:text-right max-w-md"> */}
-          <p className="text-[#6a9999] text-md text-left md:text-right">
-          {/* <p className="text-[#6a9999] text-[16px] text-left md:text-right"> */}
+          {/* <p className="text-[#6a9999] text-md text-left md:text-right">
             Gorro is not a bank. Savings and treasury services are provided by  Ekondo Microfinance Bank.
-          </p>
+          </p> */}
         </div>
 
       </div>

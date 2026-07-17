@@ -42,10 +42,14 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>1. Who We Are</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Gorro is a community finance infrastructure platform developed and operated by Bigstack Technologies Ltd, and sponsored by  Ekondo Microfinance Bank.
+                Gorro is a community finance infrastructure platform developed and operated by Bigstack Technologies Ltd.  <br />
+                {/* and sponsored by  Ekondo Microfinance Bank. */}
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Gorro provides savings, group treasury management, and credit access services provided by  Ekondo Microfinance Bank, a licensed microfinance bank regulated by the Central Bank of Nigeria (CBN). All banking and financial services on the Gorro platform are delivered by Ekondo MFB.
+                Gorro provides savings, group treasury management. <br />
+                 {/* and credit access services provided by  Ekondo Microfinance Bank, a licensed microfinance bank regulated by the Central Bank of Nigeria (CBN). <br /> */}
+                  {/* All banking and financial services on the Gorro platform are delivered by Ekondo MFB. */}
+                  All financial services on the Gorro platform are delivered by licence financial institution.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 For any privacy-related enquiries, you may contact us at: <a href="mailto:privacy@gorro.ng" className="text-[#0a3d2e] hover:underline">privacy@gorro.ng</a>
@@ -66,7 +70,8 @@ export default function PrivacyPolicy() {
                     <li>Identity information: your full name, date of birth, gender, and nationality.</li>
                     <li>Contact information: your phone number, email address, and residential address.</li>
                     <li>Identity verification documents: Bank Verification Number (BVN), National Identity Number (NIN), and government-issued identification documents required for KYC compliance.</li>
-                    <li>Financial information: bank account details, transaction history, savings balances, and credit-related information.</li>
+                    {/* <li>Financial information: bank account details, transaction history, savings balances, and credit-related information.</li> */}
+                    <li>Financial information: bank account details, transaction history, savings balances</li>
                     <li>Account credentials: your username and password.</li>
                     <li>Next-of-kin details: name and contact information for your nominated next of kin.</li>
                     <li>Communications: any messages, queries, or feedback you send to us through the app or via support channels.</li>
@@ -87,9 +92,9 @@ export default function PrivacyPolicy() {
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">2.3 Information From Third Parties</h3>
                   <ul className="list-disc pl-6 space-y-2 text-gray-600">
                     <li>Identity verification data from licensed identity verification providers.</li>
-                    <li>Credit information from CRC Credit Bureau, used to assess creditworthiness for loan products.</li>
+                    {/* <li>Credit information from CRC Credit Bureau, used to assess creditworthiness for loan products.</li> */}
                     <li>Payment and transaction data from our payment service providers, Paystack and Fincra.</li>
-                    <li>Banking and account data from  Ekondo Microfinance Bank in connection with the delivery of financial services on the platform.</li>
+                    {/* <li>Banking and account data from  Ekondo Microfinance Bank in connection with the delivery of financial services on the platform.</li> */}
                   </ul>
                 </div>
 
@@ -118,8 +123,8 @@ export default function PrivacyPolicy() {
                 <li>Verify your identity and carry out Know Your Customer (KYC) checks as required by applicable regulations.</li>
                 <li>Provide, operate, and improve the Gorro platform and all its features.</li>
                 <li>Process your transactions, savings plans, group contributions, and withdrawals.</li>
-                <li>Assess your eligibility for credit products through our banking partner,  Ekondo Microfinance Bank.</li>
-                <li>Report credit activity to CRC Credit Bureau as required by law and in accordance with your agreement to our terms.</li>
+                {/* <li>Assess your eligibility for credit products through our banking partner,  Ekondo Microfinance Bank.</li> */}
+                {/* <li>Report credit activity to CRC Credit Bureau as required by law and in accordance with your agreement to our terms.</li> */}
                 <li>Send you transaction notifications, account updates, security alerts, and service-related communications.</li>
                 <li>Respond to your enquiries and provide customer support.</li>
                 <li>Comply with our legal and regulatory obligations under applicable Nigerian law.</li>
@@ -138,7 +143,8 @@ export default function PrivacyPolicy() {
               <ul className="list-disc pl-6 space-y-2 text-gray-600">
                 <li>Consent: where you have explicitly agreed to the processing of your personal data for a specific purpose.</li>
                 <li>Contractual necessity: where processing is necessary to fulfil our obligations to you under the Gorro Terms of Service.</li>
-                <li>Legal obligation: where we are required by law or regulation to process your data — for example, for KYC, anti-money laundering (AML), and credit bureau reporting obligations.</li>
+                {/* <li>Legal obligation: where we are required by law or regulation to process your data — for example, for KYC, anti-money laundering (AML), and credit bureau reporting obligations.</li> */}
+                <li>Legal obligation: where we are required by law or regulation to process your data — for example, for KYC, anti-money laundering (AML)</li>
                 <li>Legitimate interests: where processing is necessary for our legitimate business interests or the interests of third parties, provided those interests are not overridden by your rights and freedoms.</li>
               </ul>
             </section>
@@ -152,49 +158,49 @@ export default function PrivacyPolicy() {
 
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.1 With Our Banking and Financial Partners</h3>
+                  {/* <h3 className="text-lg font-semibold text-gray-900 mb-2">5.1 With Our Banking and Financial Partners</h3>
                   <p className="text-gray-600 leading-relaxed">
                     We share necessary personal and financial data with  Ekondo Microfinance Bank for the purpose of delivering regulated financial services — including savings products, loan disbursements, and account management — on the Gorro platform.
-                  </p>
+                  </p> */}
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.2 With Payment Service Providers</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.1 With Payment Service Providers</h3>
                   <p className="text-gray-600 leading-relaxed">
                     We share transaction data with Paystack and Fincra solely for the purpose of processing payments, deposits, and withdrawals on the platform.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.3 With Credit Bureaus</h3>
+                  {/* <h3 className="text-lg font-semibold text-gray-900 mb-2">5.3 With Credit Bureaus</h3>
                   <p className="text-gray-600 leading-relaxed">
                     We share credit-relevant data with CRC Credit Bureau as required by law and for the purpose of credit scoring and responsible lending. By using Gorro&apos;s credit features, you consent to the sharing and reporting of your credit activity.
-                  </p>
+                  </p> */}
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.4 With Identity Verification Providers</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.2 With Identity Verification Providers</h3>
                   <p className="text-gray-600 leading-relaxed">
                     We share identity information with licensed identity and KYC verification providers for the purpose of verifying your BVN, NIN, and other identity documents.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.5 With Regulators and Law Enforcement</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.3 With Regulators and Law Enforcement</h3>
                   <p className="text-gray-600 leading-relaxed">
                     We may disclose your personal data to government agencies, regulators, law enforcement bodies, or courts where we are required to do so by law, court order, or regulatory direction — including the Central Bank of Nigeria (CBN), the Nigeria Financial Intelligence Unit (NFIU), and other competent authorities.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.6 In a Business Transaction</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.4 In a Business Transaction</h3>
                   <p className="text-gray-600 leading-relaxed">
                     If Bigstack Technologies Ltd undergoes a merger, acquisition, restructuring, or sale of assets, your personal data may be transferred to the successor entity as part of that transaction. We will notify you of any such change in advance.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.7 With Your Consent</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">5.5 With Your Consent</h3>
                   <p className="text-gray-600 leading-relaxed">
                     We may share your information with other third parties where you have given us your explicit consent to do so.
                   </p>

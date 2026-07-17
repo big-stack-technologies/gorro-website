@@ -41,10 +41,17 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>1. About Gorro</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Gorro is a community finance infrastructure platform developed and operated by Bigstack Technologies Ltd, and sponsored by Ekondo Microfinance Bank.
+                {/* Gorro is a community finance infrastructure platform developed and operated by Bigstack Technologies Ltd, and sponsored by Ekondo Microfinance Bank. */}
+                Gorro is a community finance infrastructure platform developed and operated by Bigstack Technologies Ltd.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              {/* <p className="text-gray-600 leading-relaxed">
                 Gorro provides savings, group treasury management, and credit access services provided by Ekondo Microfinance Bank, a licensed microfinance bank regulated by the Central Bank of Nigeria (CBN). All banking and financial services on the Gorro platform are delivered by Ekondo MFB.
+              </p> */}
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                Gorro provides savings, group treasury management. <br />
+                 {/* and credit access services provided by  Ekondo Microfinance Bank, a licensed microfinance bank regulated by the Central Bank of Nigeria (CBN). <br /> */}
+                  {/* All banking and financial services on the Gorro platform are delivered by Ekondo MFB. */}
+                  All financial services on the Gorro platform are delivered by licence financial institution.
               </p>
             </section>
 
@@ -108,7 +115,7 @@ export default function TermsOfService() {
                 Upon successful account creation and KYC verification, a Gorro Savings Wallet will be opened for you. Your wallet is your primary financial account on the platform and is the gateway to all Gorro savings products and group features.
               </p>
               <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-4">
-                <li>Your wallet balance is held in trust by Ekondo Microfinance Bank and is protected under the bank&apos;s licence.</li>
+                {/* <li>Your wallet balance is held in trust by Ekondo Microfinance Bank and is protected under the bank&apos;s licence.</li> */}
                 <li>All wallet transactions are permanently recorded in an immutable ledger.</li>
                 <li>You may fund your wallet via bank transfer or other payment methods supported by the platform.</li>
                 <li>Withdrawals from your wallet are processed to any registered Nigerian bank account.</li>
@@ -132,7 +139,7 @@ export default function TermsOfService() {
             </section>
 
             {/* Savings Products */}
-            <section>
+            {/* <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>5. Savings Products</h2>
               
               <div className="space-y-6">
@@ -157,11 +164,11 @@ export default function TermsOfService() {
                   </p>
                 </div>
               </div>
-            </section>
+            </section> */}
 
             {/* Circle Savings */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>6. Circle Savings</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>5. Circle Savings</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 Circle Savings allows users to save collectively towards a shared goal. When you create or join a Circle, the following terms apply:
               </p>
@@ -175,56 +182,56 @@ export default function TermsOfService() {
 
             {/* Gorro Cluster */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>7. Gorro Cluster — Community Treasury</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>6. Gorro Cluster — Community Treasury</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 Gorro Cluster is a shared digital treasury for organised groups, governed by three verified administrators. The following terms apply to all Cluster participants:
               </p>
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">7.1 Cluster Creation and Activation</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">6.1 Cluster Creation and Activation</h3>
                   <p className="text-gray-600 leading-relaxed">
                     A Cluster must be created with exactly three (3) verified admins. The Cluster is not active until all three admins have been verified by Gorro. Each admin must be a registered Gorro user who has completed KYC verification.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">7.2 Admin Governance</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">6.2 Admin Governance</h3>
                   <p className="text-gray-600 leading-relaxed">
                     All withdrawals from a Cluster treasury require the approval of all three admins. No single admin may authorise a withdrawal unilaterally. By accepting admin status, you accept a fiduciary responsibility to all members of the Cluster.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">7.3 Admin Changes</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">6.3 Admin Changes</h3>
                   <p className="text-gray-600 leading-relaxed">
                     The removal of an admin triggers a mandatory 24-hour cooling-off period during which all withdrawals are paused and a dispute window is open. A new admin may only be added after the cooling-off period has ended and the new admin has been verified by Gorro.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">7.4 Member Transparency</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">6.4 Member Transparency</h3>
                   <p className="text-gray-600 leading-relaxed">
                     All Cluster members have the right to view the Cluster&apos;s current balance, full transaction history, all contributions, and all withdrawals at any time. Individual KYC data and private admin communications are not visible to members.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">7.5 Disputes</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">6.5 Disputes</h3>
                   <p className="text-gray-600 leading-relaxed">
                     Any Cluster member may raise a dispute through the platform. Upon submission of a dispute, all pending Cluster withdrawals are immediately paused and all admins are notified. Gorro reserves the right to investigate and take appropriate action in respect of any dispute raised.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">7.6 Cluster Closure</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">6.6 Cluster Closure</h3>
                   <p className="text-gray-600 leading-relaxed">
                     Closure of a Cluster requires the initiation by one admin and the approval of both remaining admins. Upon approved closure, the remaining Cluster balance is transferred to the designated admin and all members are notified. The Cluster&apos;s transaction history is archived permanently.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">7.7 Off-Platform Contributions</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">6.7 Off-Platform Contributions</h3>
                   <p className="text-gray-600 leading-relaxed">
                     Cluster members may record contributions from individuals who are not registered Gorro users. A temporary virtual account is generated for each off-platform contribution and expires upon receipt of payment. All such contributions are recorded against the contributor&apos;s name in the Cluster ledger.
                   </p>
@@ -234,14 +241,14 @@ export default function TermsOfService() {
 
             {/* Ajo by Gorro */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>8. Ajo by Gorro</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>7. Ajo by Gorro</h2>
               <p className="text-gray-600 leading-relaxed">
                 Ajo by Gorro is a digitised rotational savings product. Members contribute on a scheduled basis and receive the pooled contributions in rotation. The platform automates contributions, rotation scheduling, and record-keeping. Specific terms governing your participation in an Ajo group will be communicated within the app at the time of creation or joining.
               </p>
             </section>
 
             {/* Credit and Loan Products */}
-            <section>
+            {/* <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>9. Credit and Loan Products</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 Loan products available on the Gorro platform are offered by Ekondo Microfinance Bank under its regulatory licence. By applying for a loan through Gorro, you agree to:
@@ -255,11 +262,11 @@ export default function TermsOfService() {
               <p className="text-gray-600 mt-4 leading-relaxed">
                 Loan origination and servicing are subject to the specific terms and conditions communicated by Ekondo Microfinance Bank at the time of application. Bigstack Technologies Ltd earns fees in connection with loan origination and servicing but is not the lender.
               </p>
-            </section>
+            </section> */}
 
             {/* Prohibited Conduct */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>10. Prohibited Conduct</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>8. Prohibited Conduct</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 You agree not to use the Gorro platform for any of the following purposes:
               </p>
@@ -278,7 +285,7 @@ export default function TermsOfService() {
 
             {/* Limitation of Liability */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>11. Limitation of Liability</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>9. Limitation of Liability</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 To the fullest extent permitted by applicable law, Bigstack Technologies Ltd shall not be liable for:
               </p>
@@ -298,7 +305,7 @@ export default function TermsOfService() {
 
             {/* Governing Law and Dispute Resolution */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>12. Governing Law and Dispute Resolution</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>10. Governing Law and Dispute Resolution</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 These Terms are governed by and shall be construed in accordance with the laws of the Federal Republic of Nigeria.
               </p>
@@ -312,7 +319,7 @@ export default function TermsOfService() {
 
             {/* Amendments to These Terms */}
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>13. Amendments to These Terms</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Wittgenstein' }}>11. Amendments to These Terms</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 We may update these Terms of Service from time to time. Where we make material changes, we will notify you via the app or by email at least 14 days before the changes take effect. Your continued use of Gorro after the effective date of any updated Terms constitutes your acceptance of those changes.
               </p>
