@@ -250,9 +250,9 @@ export default function Footer() {
           <p className="text-[#6a9999] text-md">
             © {new Date().getFullYear()} Bigstack Technologies Ltd. All rights reserved.
           </p>
-          {/* <p className="text-[#6a9999] text-md text-left md:text-right">
+          <p className="text-[#6a9999] text-md text-left md:text-right">
             Gorro is not a bank. Savings and treasury services are provided by  Ekondo Microfinance Bank.
-          </p> */}
+          </p>
         </div>
 
       </div>

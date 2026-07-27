@@ -618,7 +618,7 @@ export default function Home() {
               </ul>
               <div className="space-y-1 mb-6 flex gap-2 items-center ">
                 <Link
-                  href="#"
+                  href="https://apps.apple.com/app/gorro/id6761542565"
                   className="flex items-center justify-center gap-3 bg-black text-white  rounded-lg transition-colors duration-200"
                 >
                   <Image
