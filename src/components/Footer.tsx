@@ -205,9 +205,15 @@ export default function Footer() {
               </a>
             </div>
             <ul className="space-y-3">
-              {/* Address */}
+              {/* Address 1 - Calabar */}
               <li className="text-[#c8dcdc] text-sm leading-relaxed">
-               J43 Rd 3, VGC, Lekki Ekpe Expy<br />
+                62B, Old Odukpani Road, Ishie Town<br />
+                Calabar 540211, Cross River
+              </li>
+
+              {/* Address 2 - Lagos */}
+              <li className="text-[#c8dcdc] text-sm leading-relaxed">
+                J43 Rd 3, VGC, Lekki Ekpe Expy<br />
                 Lagos, Nigeria.
               </li>
 

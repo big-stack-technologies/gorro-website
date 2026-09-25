@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { features, hero, ui } from '@/asset/remoteAsset';
-import { useEffect, useRef } from 'react';
+import { features, hero, products, ui } from '@/asset/remoteAsset';
+import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -11,6 +11,15 @@ export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
   const problemRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
+  const productsRef = useRef<HTMLDivElement>(null);
+  const individualSavingsRef = useRef<HTMLDivElement>(null);
+  const howItWorksRef = useRef<HTMLDivElement>(null);
+  const whoItsForRef = useRef<HTMLDivElement>(null);
+  const ctaRef = useRef<HTMLDivElement>(null);
+
+  // Mouse tracking state for parallax effect
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [hoveredCard, setHoveredCard] = useState<string | null>(null);
 
   useEffect(() => {
     // Register GSAP plugins
@@ -25,6 +34,41 @@ export default function Home() {
         duration: 1,
         stagger: 0.2,
         ease: "power3.out"
+      });
+    }
+
+    // Hero feature cards animation
+    const heroFeatureCards = heroRef.current?.querySelectorAll('.border-l-4');
+    if (heroFeatureCards) {
+      gsap.from(heroFeatureCards, {
+        opacity: 0,
+        x: 50,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power2.out",
+        delay: 0.5
+      });
+    }
+
+    // Mobile image float animation
+    const mobileImage = heroRef.current?.querySelector('.mobile-float');
+    if (mobileImage) {
+      gsap.from(mobileImage, {
+        opacity: 0,
+        y: 100,
+        scale: 0.8,
+        duration: 1.2,
+        ease: "power3.out",
+        delay: 0.8
+      });
+      
+      // Continuous float effect
+      gsap.to(mobileImage, {
+        y: -20,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
       });
     }
 
@@ -54,45 +98,102 @@ export default function Home() {
         y: 20,
         duration: 0.8,
         stagger: 0.1,
-        ease: "back.out(1.7)"
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: cardsRef.current,
+          start: "top 85%",
+          toggleActions: "play none none none"
+        }
       });
     }
 
-    // Feature cards animations
-    const featureCardElements = heroRef.current?.querySelectorAll('.border-l-4, .bg-white');
-    if (featureCardElements) {
-      gsap.from(featureCardElements, {
+    // Products section animations
+    const productsHeader = productsRef.current?.querySelector('.products-header');
+    if (productsHeader) {
+      gsap.from(productsHeader, {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: productsHeader,
+          start: "top 85%",
+          toggleActions: "play none none none"
+        }
+      });
+    }
+
+    // Gorro Cluster card animation
+    const clusterCard = productsRef.current?.querySelector('.cluster-card');
+    if (clusterCard) {
+      gsap.from(clusterCard, {
+        opacity: 0,
+        scale: 0.95,
+        y: 30,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: clusterCard,
+          start: "top 85%",
+          toggleActions: "play none none none"
+        }
+      });
+    }
+
+    // Group savings cards animation - REMOVED to prevent fading
+    // Cards will appear normally without animation
+
+    // Individual savings cards animation
+    const individualCards = individualSavingsRef.current?.querySelectorAll('.individual-card');
+    if (individualCards) {
+      gsap.from(individualCards, {
+        opacity: 0,
+        y: 50,
+        scale: 0.9,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "back.out(1.4)",
+        scrollTrigger: {
+          trigger: individualSavingsRef.current,
+          start: "top 80%",
+          toggleActions: "play none none none"
+        }
+      });
+    }
+
+    // How it works section animations
+    const stepsElements = howItWorksRef.current?.querySelectorAll('.step-item');
+    if (stepsElements) {
+      gsap.from(stepsElements, {
         opacity: 0,
         x: -30,
         duration: 0.8,
         stagger: 0.15,
-        ease: "power2.out"
-      });
-    }
-
-    // Badge animations
-    const badgeElements = heroRef.current?.querySelectorAll('.bg-gray-100');
-    if (badgeElements) {
-      gsap.from(badgeElements, {
-        opacity: 0,
-        scale: 0.5,
-        duration: 0.6,
-        stagger: 0.1,
-        ease: "back.out(1.7)"
-      });
-    }
-
-    // Parallax effect on hero cards
-    const heroCards = heroRef.current?.querySelectorAll('.border, .rounded-xl');
-    if (heroCards) {
-      gsap.to(heroCards, {
-        yPercent: -20,
-        ease: "none",
+        ease: "power2.out",
         scrollTrigger: {
-          trigger: heroRef.current,
-          start: "top top",
-          end: "bottom top",
-          scrub: 1
+          trigger: howItWorksRef.current,
+          start: "top 75%",
+          toggleActions: "play none none none"
+        }
+      });
+    }
+
+    // Who its for cards animation - REMOVED to prevent fading
+    // Cards will appear normally without animation
+
+    // CTA section animation
+    const ctaElements = ctaRef.current?.querySelectorAll('.cta-content, .cta-card');
+    if (ctaElements) {
+      gsap.from(ctaElements, {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ctaRef.current,
+          start: "top 85%",
+          toggleActions: "play none none none"
         }
       });
     }
@@ -183,32 +284,24 @@ export default function Home() {
           </div>
         </div>
 
-         {/* button middle */}
-              {/* <div className="flex  items-center justify-center  ">
-                <Image
-                    src={hero.mobile}
-                    alt="mobile view"
-                    width={500}
-                    height={400}
-                    className="object-contain  "
-                  />
-              </div> */}
+        {/* Mobile phone image - Smaller, shows only top half */}
+        <div className="w-full overflow-hidden relative h-[500px] -mb-32 z-0">
+          <div className="flex items-center justify-center mobile-float">
+            <Image
+              src={hero.mobile}
+              alt="mobile view"
+              width={400}
+              height={400}
+              // className="object-contain w-[280px] sm:w-[320px] md:w-[360px] h-auto"
+              className="object-contain w-[320px] sm:w-[350px] md:w-[400px] h-auto"
 
-              {/* <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[-120px] z-10"> */}
-              <div className="flex   items-center justify-center  ">
-                <Image
-                  src={hero.mobile}
-                  alt="mobile view"
-                  width={400}
-                  height={400}
-                  className="object-contain w-[320px] sm:w-[350px] md:w-[400px] h-auto"
-                  // className="object-contain"
-                />
-              </div>
+            />
+          </div>
+        </div>
       </section>
 
       {/* ── PROBLEM SECTION ── */}
-      <section className="bg-[#0A3F2F] py-16" ref={problemRef}>
+      <section className="bg-[#0A3F2F] py-16 rounded-t-[50px] rounded-b-[50px] mt-0 mb-8 relative z-10" ref={problemRef}>
         <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
           {/* <div className="mb-10">
             <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3">THE PROBLEM AT SCALE</div>
@@ -266,9 +359,9 @@ export default function Home() {
       </section>
 
       {/* ── PRODUCTS OVERVIEW ── */}
-      <section id="products" className="py-20 bg-white">
+      <section id="products" className="py-20 bg-white" ref={productsRef}>
         <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-4">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-4 products-header">
             <div>
               <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-2">MORE GORRO OPTIONS</div>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 md:w-[60%] leading-tight" style={{fontFamily:'Wittgenstein'}}>
@@ -281,7 +374,7 @@ export default function Home() {
           </div>
 
           {/* Gorro Cluster – full-width card */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 bg-[#F5E7F7] border border-[#A00EB3]/20 px-4 py-4 rounded-2xl"  >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 bg-[#F5E7F7] border border-[#A00EB3]/20 px-4 py-4 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 cluster-card"  >
             <div className="  rounded-2xl p-8">
               <div className="inline-block text-white text-xs font-semibold px-3 py-1 rounded-full mb-4 bg-[#A00EB3]"> ⭐ FLAGSHIP PRODUCT</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2" style={{fontFamily:'Wittgenstein'}}>Gorro Cluster</h3>
@@ -330,7 +423,7 @@ export default function Home() {
 
           {/* Circle Savings + Ajo by Gorro */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 ">
-            <div className="border border-gray-200 rounded-2xl p-8 bg-[#EDF4F2]">
+            <div className="border border-gray-200 rounded-3xl p-8 bg-[#EDF4F2] shadow-md hover:shadow-lg transition-all duration-300 group-savings-card">
               <div className="inline-block bg-[#4F8F7A] text-white text-xs font-bold px-3 py-1 rounded-full mb-4">GROUP SAVINGS</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{fontFamily:'Wittgenstein'}}>Circle Savings</h3>
               <p className="text-sm text-gray-600 mb-5 leading-relaxed">
@@ -353,7 +446,7 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <div className="border border-gray-200 rounded-2xl p-8 bg-[#EDF4F2]">
+            <div className="border border-gray-200 rounded-3xl p-8 bg-[#EDF4F2] shadow-md hover:shadow-lg transition-all duration-300 group-savings-card">
               <div className="inline-block bg-[#4F8F7A] text-white text-xs font-semibold px-3 py-1 rounded-full mb-4 ">ROTATIONAL SAVINGS</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{fontFamily:'Wittgenstein'}}>Ajo by Gorro</h3>
               <p className="text-sm text-gray-600 mb-5 leading-relaxed">
@@ -379,33 +472,81 @@ export default function Home() {
           </div>
 
           {/* Individual Savings */}
-          <div className="mb-2">
+          <div className="mb-2" ref={individualSavingsRef}>
             <div className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ fontFamily: 'Work Sans', fontWeight: '500', fontSize: '16px', lineHeight: '24px', letterSpacing: '0%',backgroundColor:'#E6F2F2', color: '#4F8F7A', display: 'inline-flex', alignItems: 'center', padding: '4px 12px', borderRadius: '40px', gap: '8px' }}>PERSONAL SAVERS</div>
             <h3 className="text-xl font-bold text-gray-900 mb-1" style={{ fontFamily: 'Wittgenstein', fontWeight: '600', fontSize: '28px', lineHeight: '34px', letterSpacing: '-2%', verticalAlign: 'middle' }}>Individual Savings</h3>
-            <p className="text-sm text-gray-500 mb-6" style={{ fontFamily: 'Work Sans', fontWeight: '400', fontSize: '16px', lineHeight: '24px' }}>Three ways to grow your money. Each designed for a different life stage and a different relationship with savings.</p>
+            <p className="text-sm text-gray-500 mb-6" style={{ fontFamily: 'Work Sans', fontWeight: '400', fontSize: '16px', lineHeight: '24px' }}>Four ways to grow your money. Each designed for a different life stage and a different relationship with savings.</p>
           </div>
           {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-5"> */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { color: 'bg-[#E3EFFC]', border: '1px solid #1671D9', accent: 'text-[#272A2A]', icon: features.fixedSaving, title: 'Fixed Savings', desc: 'Lock money for a set period. Earn interest when it matures. Simple, committed, rewarding.' },
-              { color: 'bg-[#EDF4F2]', border: '1px solid #4F8F7A', accent: 'text-[#272A2A]', icon: features.targetSaving, title: 'Target Savings', desc: 'Set a goal. Set a pace. Gorro auto-saves for you and accrues interest daily until you get there.' },
-              { color: 'bg-[#FFFBEB]', border: '1px solid #F59E0B', accent: 'text-[#272A2A]', icon: features.gorroVault, title: 'Gorro Vault', desc: 'Lock your money. Collect your interest upfront. The full return hits your wallet the moment you commit.' },
-              // { color: 'bg-[#FFFBEB]', border: '1px solid #F59E0B', accent: 'text-[#272A2A]', icon: features.gorroVault, title: 'Smart Wallet', desc: 'Lock your money. Collect your interest upfront. The full return hits your wallet the moment you commit.' },
+              { color: 'bg-[#E3EFFC]', accent: 'text-[#272A2A]', icon: features.fixedSavingIcon, image: products.fixedSaving, hoverImage: products.fixedSavingHover, title: 'Fixed Savings', desc: 'Lock money for a set period. Earn interest when it matures. Simple, committed, rewarding.', id: 'fixed' },
+              { color: 'bg-[#EDF4F2]', accent: 'text-[#272A2A]', icon: features.targetSavingIcon, image: products.targetSaving, hoverImage: products.targetSavingHover, title: 'Target Savings', desc: 'Set a goal. Set a pace. Gorro auto-saves for you and accrues interest daily until you get there.', id: 'target' },
+              { color: 'bg-[#FFFBEB]', accent: 'text-[#272A2A]', icon: features.gorroVaultIcon, image: products.gorroVault, hoverImage: products.gorroVaultHover, title: 'Gorro Vault', desc: 'Lock your money. Collect your interest upfront. The full return hits your wallet the moment you commit.', id: 'vault' },
+              { color: 'bg-[#FFF5F5]', accent: 'text-[#272A2A]', icon: features.smartWalletIcon, image: products.smartWallet, hoverImage: products.smartWalletHover, title: 'Smart Wallet', desc: 'Your everyday money hub. Instant transfers, bill payments, and seamless transactions — all in one place.', id: 'smart' },
             ].map(item => (
-              <div key={item.title} className={`${item.color} rounded-2xl p-6`} style={{ border: item.border }}>
-                <div className="block items-center gap-4 mb-3">
-                  <div className="w-12 h-12  flex items-center justify-center flex-shrink-0">
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={24}
-                      height={24}
-                      className="object-contain"
-                    />
-                  </div>
+              <div 
+                key={item.title} 
+                className={`${item.color} rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 individual-card overflow-hidden relative`}
+                onMouseMove={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  const x = ((e.clientX - rect.left) / rect.width - 0.5) * 20;
+                  const y = ((e.clientY - rect.top) / rect.height - 0.5) * 20;
+                  setMousePosition({ x, y });
+                  setHoveredCard(item.id);
+                }}
+                onMouseLeave={() => {
+                  setMousePosition({ x: 0, y: 0 });
+                  setHoveredCard(null);
+                }}
+              >
+                <div className="flex flex-col h-full relative z-10">
+                  {/* Content at top */}
                   <div>
-                    <h3 className={`font-bold text-lg mb-2 ${item.accent}`}>{item.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                    {/* Icon at the top */}
+                    <div className="w-12 h-12 mb-4 flex items-center justify-center">
+                      <Image
+                        src={item.icon}
+                        alt={`${item.title} icon`}
+                        width={32}
+                        height={32}
+                        className="object-contain"
+                      />
+                    </div>
+                    <h3 className={`font-extrabold text-xl mb-3 ${item.accent}`} style={{ fontFamily: 'Wittgenstein', fontWeight: '700' }}>{item.title}</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed mb-6 font-semibold" style={{ fontFamily: 'Work Sans', fontWeight: '600' }}>{item.desc}</p>
+                  </div>
+
+                  {/* Spacer to push image to bottom */}
+                  <div className="flex-grow"></div>
+
+                  {/* Image at bottom - fixed height */}
+                  <div className="w-full flex items-end justify-center mt-auto relative h-[200px]">
+                    <div 
+                      className="transition-all duration-300 ease-out relative w-full h-full flex items-end justify-center"
+                      style={{
+                        transform: hoveredCard === item.id 
+                          ? `translate(${mousePosition.x}px, ${mousePosition.y}px) scale(1.05)` 
+                          : 'translate(0, 0) scale(1)'
+                      }}
+                    >
+                      {/* Default Image */}
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={280}
+                        height={200}
+                        className={`object-contain object-bottom drop-shadow-2xl transition-opacity duration-300 ${hoveredCard === item.id ? 'opacity-0' : 'opacity-100'}`}
+                      />
+                      {/* Hover Image */}
+                      <Image
+                        src={item.hoverImage}
+                        alt={`${item.title} hover`}
+                        width={280}
+                        height={200}
+                        className={`object-contain object-bottom drop-shadow-2xl transition-opacity duration-300 absolute bottom-0 ${hoveredCard === item.id ? 'opacity-100' : 'opacity-0'}`}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -415,7 +556,7 @@ export default function Home() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section id="how-it-works" className="py-20 bg-[#f5f5f0] overflow-hidden">
+      <section id="how-it-works" className="py-20 bg-[#f5f5f0] overflow-hidden rounded-t-[50px] rounded-b-[50px]" ref={howItWorksRef}>
         <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-12">
             <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3">GETTING STARTED</div>
@@ -457,7 +598,7 @@ export default function Home() {
                 { num: '03', title: 'Open your wallet', desc: 'Your Gorro wallet is your financial home. Fund it and you\'re ready to save.',  divider: ""  },
                 { num: '04', title: 'Start saving your way', desc: 'Choose a savings product, join or create a group, or set up your Cluster treasury.',   },
               ].map(step => (
-                <div key={step.num} className="flex gap-5 items-center justify-center">
+                <div key={step.num} className="flex gap-5 items-center justify-center step-item">
                   {/* <div className="w-10 h-10 rounded-full bg-[#0a3d2e] text-white flex items-center justify-center font-bold text-sm flex-shrink-0">{step.num}</div> */}
                   <div className='block text-center'>
                     <div className="w-15 h-15 mx-auto items-center text-center justify-center rounded-full bg-[#0A3F2F] text-white flex  font-bold text-lg flex-shrink-0" style={{fontFamily:'Wittgenstein'}}>{step.num}</div>
@@ -495,7 +636,7 @@ export default function Home() {
       </section>
 
       {/* ── WHO IS IT FOR ── */}
-      <section id="who-its-for" className="py-20 bg-white">
+      <section id="who-its-for" className="py-20 bg-white" ref={whoItsForRef}>
         <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-12">
             <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3" style={{ fontFamily: 'Work Sans'}}>WHO GORRO IS BUILT FOR</div>
@@ -505,7 +646,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Individual */}
-            <div className="bg-[#0A3F2F] border border-gray-200 rounded-2xl p-8">
+            <div className="bg-[#0A3F2F] border border-gray-200 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 who-card">
               <div className="text-xs text-white font-semibold uppercase tracking-widest mb-2" style={{ fontFamily: 'Work Sans'}}>FOR INDIVIDUALS</div>
               <h3 className="text-2xl md:w-[50%] w-[70%]  font-bold text-white mb-4" style={{ fontFamily: 'Wittgenstein'}}>The disciplined <span className="text-gray-300 italic">personal saver.</span></h3>
               <p className="text-sm text-white mb-6 leading-relaxed">
@@ -533,7 +674,7 @@ export default function Home() {
               </ul>
             </div>
             {/* Community */}
-            <div className="bg-[#9E4A2F] border border-[#0a3d2e]/20 rounded-2xl p-8">
+            <div className="bg-[#9E4A2F] border border-[#0a3d2e]/20 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 who-card">
               <div className="text-xs text-white font-semibold uppercase tracking-widest mb-2" style={{ fontFamily: 'Work Sans'}}>FOR GROUPS &amp; COMMUNITIES</div>
               <h3 className="text-2xl md:w-[50%] w-[80%] font-bold text-white mb-4" style={{ fontFamily: 'Wittgenstein', }}>The treasurer who <span className="text-gray-300 italic">needs backup.</span></h3>
               <p className="text-sm text-white mb-6 leading-relaxed">
@@ -576,11 +717,11 @@ export default function Home() {
       </section>
 
       {/* ── CTA + APP DOWNLOAD ── */}
-      <section id="early-access" className="py-16 bg-[#0a3d2e]">
+      <section id="early-access" className="py-16 bg-[#0a3d2e] rounded-t-[50px]" ref={ctaRef}>
         <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left */}
-            <div>
+            <div className="cta-content">
               <div className="text-xs font-semibold uppercase tracking-widest text-[#a8c5c5] mb-4">EARLY ACCESS IS HERE</div>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight" style={{fontFamily:'Wittgenstein'}}>
                 Be among the<br />first to use <span className="italic text-gray-300">Gorro.</span>
@@ -592,7 +733,7 @@ export default function Home() {
               <p className="text-[#a8c5c5] text-sm ">Available on the App Store and Google Play Store</p>
             </div>
             {/* Right – download card */}
-            <div className="bg-white rounded-2xl p-8">
+            <div className="bg-white rounded-3xl p-8 shadow-xl cta-card">
               {/* <div className="text-xs font-semibold uppercase tracking-widest text-[#0a3d2e] mb-3">CLOSE YOUR EYES &amp; PICTURE</div> */}
               <h3 className="text-xl font-bold text-gray-900 mb-4" style={{fontFamily:'Wittgenstein'}}>Download Gorro</h3>
               <p className="text-sm text-gray-600 mb-6 leading-relaxed">

@@ -67,7 +67,7 @@ export default function Navbar() {
               onClick={() => scrollToSection('early-access')}
               className="bg-[#0a3d2e] hover:bg-[#0d4f3c] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors duration-150"
             >
-              Get early access
+              Get access
             </button>
           </div>
 
@@ -80,7 +80,7 @@ export default function Navbar() {
               }}
               className="bg-[#0a3d2e] hover:bg-[#0d4f3c] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors duration-150"
             >
-              Get early access
+              Get access
             </button>
           </div> */}
 
@@ -147,7 +147,7 @@ export default function Navbar() {
             }}
             className="block w-full text-center bg-[#0a3d2e] hover:bg-[#0d4f3c] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors"
           >
-            Get early access
+            Get access
           </button>
         </div>
       )}
