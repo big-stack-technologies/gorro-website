@@ -207,7 +207,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {/* Address 1 - Calabar */}
               <li className="text-[#c8dcdc] text-sm leading-relaxed">
-                62A Old Odupkani Road, Ikot Ishie Calabar 540211, <br />
+                62A Old Odupkani Road, Ikot Ishie Calabar <br/> 540211,
                 Cross River State, Nigeria 
               </li>
 
