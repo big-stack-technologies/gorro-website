@@ -285,7 +285,7 @@ export default function Home() {
         </div>
 
         {/* Mobile phone image - Smaller, shows only top half, with spacing */}
-        <div className="w-full overflow-hidden relative h-[500px] -mb-32 z-0 mt-5 pt-8">
+        <div className="w-full overflow-hidden relative h-[450px] -mb-32 z-0 mt-5 pt-8">
           <div className="flex items-center justify-center mobile-float">
             <Image
               src={hero.mobile}
