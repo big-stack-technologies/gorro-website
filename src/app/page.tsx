@@ -284,17 +284,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Mobile phone image - Smaller, shows only top half */}
-        <div className="w-full overflow-hidden relative h-[500px] -mb-32 z-0">
+        {/* Mobile phone image - Smaller, shows only top half, with spacing */}
+        <div className="w-full overflow-hidden relative h-[500px] -mb-32 z-0 mt-5 pt-8">
           <div className="flex items-center justify-center mobile-float">
             <Image
               src={hero.mobile}
               alt="mobile view"
               width={400}
               height={400}
-              // className="object-contain w-[280px] sm:w-[320px] md:w-[360px] h-auto"
-              className="object-contain w-[320px] sm:w-[350px] md:w-[400px] h-auto"
-
+              className="object-contain w-[280px] sm:w-[320px] md:w-[360px] h-auto"
             />
           </div>
         </div>
@@ -376,7 +374,18 @@ export default function Home() {
           {/* Gorro Cluster – full-width card */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 bg-[#F5E7F7] border border-[#A00EB3]/20 px-4 py-4 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 cluster-card"  >
             <div className="  rounded-2xl p-8">
-              <div className="inline-block text-white text-xs font-semibold px-3 py-1 rounded-full mb-4 bg-[#A00EB3]"> ⭐ FLAGSHIP PRODUCT</div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                  <Image
+                    src={ui.cluster}
+                    alt="Cluster icon"
+                    width={32}
+                    height={32}
+                    className="object-contain"
+                  />
+                </div>
+                {/* <div className="inline-block text-white text-xs font-semibold px-3 py-1 rounded-full bg-[#A00EB3]"> ⭐ FLAGSHIP PRODUCT</div> */}
+              </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2" style={{fontFamily:'Wittgenstein'}}>Gorro Cluster</h3>
               <p className="text-sm text-gray-600 mb-6 leading-relaxed">
                 A structured digital treasury for any organised group. Three verified admins must co-approve every withdrawal. Every transaction is permanently recorded and visible to all members in real time. No one person holds the keys.
@@ -424,7 +433,18 @@ export default function Home() {
           {/* Circle Savings + Ajo by Gorro */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 ">
             <div className="border border-gray-200 rounded-3xl p-8 bg-[#EDF4F2] shadow-md hover:shadow-lg transition-all duration-300 group-savings-card">
-              <div className="inline-block bg-[#4F8F7A] text-white text-xs font-bold px-3 py-1 rounded-full mb-4">GROUP SAVINGS</div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                  <Image
+                    src={ui.circle}
+                    alt="Circle icon"
+                    width={32}
+                    height={32}
+                    className="object-contain"
+                  />
+                </div>
+                {/* <div className="inline-block bg-[#4F8F7A] text-white text-xs font-semibold px-3 py-1 rounded-full">GROUP SAVINGS</div> */}
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{fontFamily:'Wittgenstein'}}>Circle Savings</h3>
               <p className="text-sm text-gray-600 mb-5 leading-relaxed">
                 {`Save collectively towards a shared goal. From friends, to family, and even colleagues, everyone contributes at their own pace, with full visibility into the group's progress.`}
@@ -447,7 +467,18 @@ export default function Home() {
               </ul>
             </div>
             <div className="border border-gray-200 rounded-3xl p-8 bg-[#EDF4F2] shadow-md hover:shadow-lg transition-all duration-300 group-savings-card">
-              <div className="inline-block bg-[#4F8F7A] text-white text-xs font-semibold px-3 py-1 rounded-full mb-4 ">ROTATIONAL SAVINGS</div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                  <Image
+                    src={ui.ajo}
+                    alt="Ajo icon"
+                    width={32}
+                    height={32}
+                    className="object-contain"
+                  />
+                </div>
+                {/* <div className="inline-block bg-[#4F8F7A] text-white text-xs font-semibold px-3 py-1 rounded-full">ROTATIONAL SAVINGS</div> */}
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{fontFamily:'Wittgenstein'}}>Ajo by Gorro</h3>
               <p className="text-sm text-gray-600 mb-5 leading-relaxed">
                The rotational savings system you already know — now digitised. Automated contributions, scheduled payouts, transparent records. The trust stays. The paperwork disappears.
@@ -565,29 +596,27 @@ export default function Home() {
               <span className="text-[#c8602a] italic">four simple steps.</span>
             </h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
             {/* Left photo */}
-            <div className=" overflow-hidden block items-center justify-center">
-              
-              <div className="w-100 h-100  mx-auto flex items-center justify-center flex-shrink-0">
+            <div className="flex flex-col items-center justify-start h-full">
+              <div className="w-full max-w-[400px] mb-6">
                 <Image
-                    src={hero.womanSaving}
-                    alt="woman savaing"
-                    width={500}
-                    height={400}
-                    className="object-contain  mb-10"
-                  />
+                  src={hero.womanImageOnborading}
+                  alt="woman saving"
+                  width={320}
+                  height={400}
+                  className="object-cover w-full h-auto rounded-[10px]"
+                />
               </div>
-              {/* <div className="w-100 h-100 mx-auto flex flex-col items-center justify-center  hidden md:block"> */}
-              <div className="w-100  mx-auto flex items-center text-center justify-center flex-shrink-0 hidden md:block">
-
+              {/* Red Arrow - Blinking */}
+              <div className="w-full flex items-center justify-center hidden md:block">
                 <Image
-                    src={hero.belowWoman}
-                    alt="claude ai"
-                    width={100}
-                    height={100}
-                    className="object-contain mx-auto"
-                  />
+                  src={hero.redArrowOnborading}
+                  alt="arrow indicator"
+                  width={100}
+                  height={100}
+                  className="object-contain mx-auto animate-blink"
+                />
               </div>
             </div>
             {/* Steps */}
@@ -610,25 +639,25 @@ export default function Home() {
               ))}
             </div>
             {/* Right photo */}
-            <div className=" overflow-hidden block items-center justify-center">
-              {/* <span className="text-8xl">📱</span> */}
-              <div className="w-100 h-50  mx-auto flex items-center justify-center flex-shrink-0 hidden md:block">
+            <div className="flex flex-col items-center justify-start h-full">
+              {/* Green Arrow - Blinking */}
+              <div className="w-full flex items-center justify-center mb-6 hidden md:block">
                 <Image
-                    src={hero.aboveMan}
-                    alt="woman savaing"
-                    width={300}
-                    height={300}
-                    className="object-contain w-"
-                  />
+                  src={hero.greenArrowOnborading}
+                  alt="arrow indicator"
+                  width={100}
+                  height={100}
+                  className="object-contain mx-auto animate-blink"
+                />
               </div>
-              <div className="w-100 h-100  mx-auto flex items-center justify-center flex-shrink-0">
+              <div className="w-full max-w-[400px]">
                 <Image
-                    src={hero.manSaving}
-                    alt="claude ai"
-                    width={500}
-                    height={500}
-                    className="object-contain"
-                  />
+                  src={hero.manImageOnborading}
+                  alt="man saving"
+                  width={320}
+                  height={400}
+                  className="object-cover w-full h-auto rounded-[10px]"
+                />
               </div>
             </div>
           </div>

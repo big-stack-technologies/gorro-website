@@ -18,6 +18,11 @@ export const REMOTE_ASSETS = {
     belowWoman: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481335/claude_lyffyy.svg',
     mobile:'https://res.cloudinary.com/dhipowibc/image/upload/v1790371567/Bouncing_Homescreen_3x_muieac.png',
     // mobile:'https://res.cloudinary.com/dhipowibc/image/upload/v1776198537/Mockup_iPhone_X_fjkk5e.svg',
+    // onboarding 
+    womanImageOnborading:'https://res.cloudinary.com/dhipowibc/image/upload/v1790838789/Photo_01_mrr6n7.png',
+    greenArrowOnborading:'https://res.cloudinary.com/dhipowibc/image/upload/v1790838777/Shapes_01_drkwtt.png',
+    manImageOnborading:'https://res.cloudinary.com/dhipowibc/image/upload/v1790838787/Photo_02_bqzn23.png',
+    redArrowOnborading:'https://res.cloudinary.com/dhipowibc/image/upload/v1790838777/Shapes_02_fvnfby.png',
   },
 
   // Product Screenshots/Mockups
@@ -42,9 +47,6 @@ export const REMOTE_ASSETS = {
     onePerson: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481351/one-person_pj6ayh.svg',
     bank: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481335/bank_og1e2e.svg',
     secure: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481353/secure_tmlsz2.svg',
-    // fixedSaving: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481361/target-savings_mirtkr.svg',
-    // targetSaving: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481337/icon-savings_bha1zj.svg',
-    // gorroVault: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481336/gorro-vault_zkkuis.svg',
     // diffent states with icons
     fixedSavingIcon: 'https://res.cloudinary.com/dhipowibc/image/upload/v1790372016/Fixed_Savings_hdvqr5.svg', 
     targetSavingIcon: 'https://res.cloudinary.com/dhipowibc/image/upload/v1790372041/Target_Savings_jemqsj.svg', 
@@ -60,10 +62,11 @@ export const REMOTE_ASSETS = {
     greenArrowLeft:'https://res.cloudinary.com/dhipowibc/image/upload/v1774570972/left-green_qlrp3v.svg',
     privacy: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775259828/Privacy-policy-checklist_s0pi1i.png',
     termservice: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775260759/term_fpkrrf.png',
-    // appStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775263388/download_ksx4fq.png',
     appStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775301599/download-on-apple-store-image-dark_xcewvd.png',
-    // playStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775263387/google_play_sokhv4.png',
     playStore: 'https://res.cloudinary.com/dhipowibc/image/upload/v1775301600/download-on-google-play-image-dark_ixg8dd.png',
+    ajo: 'https://res.cloudinary.com/dhipowibc/image/upload/v1790839253/Ajo_msnxx8.svg',
+    cluster: 'https://res.cloudinary.com/dhipowibc/image/upload/v1790839257/Cluster_sgd938.svg',
+    circle: 'https://res.cloudinary.com/dhipowibc/image/upload/v1790839254/Circles_evhckm.svg',
   },
 
   // Social Media Icons
