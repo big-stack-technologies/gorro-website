@@ -207,15 +207,11 @@ export default function Footer() {
             <ul className="space-y-3">
               {/* Address 1 - Calabar */}
               <li className="text-[#c8dcdc] text-sm leading-relaxed">
-                62B, Old Odukpani Road, Ishie Town<br />
-                Calabar 540211, Cross River
+                62A Old Odupkani Road, Ikot Ishie Calabar <br/> 540211,
+                Cross River State, Nigeria 
               </li>
 
-              {/* Address 2 - Lagos */}
-              <li className="text-[#c8dcdc] text-sm leading-relaxed">
-                J43 Rd 3, VGC, Lekki Ekpe Expy<br />
-                Lagos, Nigeria.
-              </li>
+              
 
               {/* Email */}
               <li>
