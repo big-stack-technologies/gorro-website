@@ -255,12 +255,12 @@ export default function ContactPage() {
                   WhatsApp (Urgent)
                 </div>
                 <a
-                  href="https://wa.me/2348110011847"
+                  href="https://wa.me/2348140417682"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#0a3d2e] font-semibold text-sm hover:underline"
                 >
-                  +234 811 001 1847
+                  +234 814 041 7682
                 </a>
                 <p className="text-xs text-gray-400 mt-1">For urgent issues only. Mon–Fri, 9am–6pm WAT.</p>
               </div>
@@ -278,10 +278,10 @@ export default function ContactPage() {
                   Phone
                 </div>
                 <a
-                  href="tel:+2348110011847"
+                  href="tel:+2348140417682"
                   className="text-[#0a3d2e] font-semibold text-sm hover:underline"
                 >
-                  +234 811 001 1847
+                  +234 814 041 7682
                 </a>
                 <p className="text-xs text-gray-400 mt-1">Mon–Fri, 9am–6pm WAT.</p>
               </div>

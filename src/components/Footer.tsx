@@ -237,7 +237,7 @@ export default function Footer() {
                   href="tel:+2340000000000"
                   className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
                 >
-                  +234 811 001 1847
+                  +234 814 041 7682
                 </a>
               </li>
             </ul>
