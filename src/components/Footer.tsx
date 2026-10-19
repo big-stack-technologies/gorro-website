@@ -234,7 +234,7 @@ export default function Footer() {
               {/* Phone */}
               <li>
                 <a
-                  href="tel:+2340000000000"
+                  href="tel:+2348140417682"
                   className="text-[#c8dcdc] text-sm hover:text-white transition-colors duration-150"
                 >
                   +234 814 041 7682
