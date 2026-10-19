@@ -21,6 +21,9 @@ export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
   
+  // Download link state
+  const [downloadLink, setDownloadLink] = useState('https://play.google.com/store/apps/details?id=com.gorro.app');
+  
   // Cluster carousel state
   const [currentClusterIndex, setCurrentClusterIndex] = useState(0);
   const clusterImages = [
@@ -31,23 +34,17 @@ export default function Home() {
     { url: REMOTE_ASSETS.cluster.withdraw, alt: 'Withdraw' },
   ];
 
-  // Detect device for download button
-  const getDownloadLink = () => {
-    if (typeof window !== 'undefined') {
-      const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
-      // iOS detection
-      if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
-        return 'https://apps.apple.com/app/gorro/id6761542565';
-      }
-      // Android detection
-      return 'https://play.google.com/store/apps/details?id=com.gorro.app';
-    }
-    return 'https://play.google.com/store/apps/details?id=com.gorro.app';
-  };
-
   useEffect(() => {
     // Register GSAP plugins
     gsap.registerPlugin(ScrollTrigger);
+
+    // Detect device and set download link
+    const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+    if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+      setDownloadLink('https://apps.apple.com/app/gorro/id6761542565');
+    } else {
+      setDownloadLink('https://play.google.com/store/apps/details?id=com.gorro.app');
+    }
 
     // Cluster carousel auto-rotate
     const carouselInterval = setInterval(() => {
@@ -259,7 +256,7 @@ export default function Home() {
               {/* Download Button */}
               <div className="flex justify-center lg:justify-start mb-8">
                 <Link
-                  href={getDownloadLink()}
+                  href={downloadLink}
                   className="flex items-center justify-center rounded-lg transition-all duration-200 hover:scale-105"
                 >
                   <Image
@@ -840,7 +837,7 @@ export default function Home() {
               </ul>
               <div className="space-y-1 mb-6 flex gap-2 ">
                 <Link
-                  href={getDownloadLink()}
+                  href={downloadLink}
                   className="flex items-center justify-center rounded-lg transition-all duration-200 hover:scale-105"
                 >
                   <Image

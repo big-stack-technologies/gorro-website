@@ -3,21 +3,21 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { logos, ui, features, REMOTE_ASSETS } from '@/asset/remoteAsset';
+import React from 'react';
 
 export default function About() {
-  // Detect device for download button
-  const getDownloadLink = () => {
-    if (typeof window !== 'undefined') {
-      const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
-      // iOS detection
-      if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
-        return 'https://apps.apple.com/app/gorro/id6761542565';
-      }
-      // Android detection
-      return 'https://play.google.com/store/apps/details?id=com.gorro.app';
+  // Download link state
+  const [downloadLink, setDownloadLink] = React.useState('https://play.google.com/store/apps/details?id=com.gorro.app');
+
+  React.useEffect(() => {
+    // Detect device and set download link
+    const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+    if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+      setDownloadLink('https://apps.apple.com/app/gorro/id6761542565');
+    } else {
+      setDownloadLink('https://play.google.com/store/apps/details?id=com.gorro.app');
     }
-    return 'https://play.google.com/store/apps/details?id=com.gorro.app';
-  };
+  }, []);
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -219,7 +219,7 @@ export default function About() {
           </p>
           <div className="flex items-center justify-center">
             <Link
-              href={getDownloadLink()}
+              href={downloadLink}
               className="flex items-center justify-center rounded-lg transition-all duration-200 hover:scale-105"
             >
               <Image
