@@ -2,9 +2,22 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { logos, ui, features } from '@/asset/remoteAsset';
+import { logos, ui, features, REMOTE_ASSETS } from '@/asset/remoteAsset';
 
 export default function About() {
+  // Detect device for download button
+  const getDownloadLink = () => {
+    if (typeof window !== 'undefined') {
+      const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+      // iOS detection
+      if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+        return 'https://apps.apple.com/app/gorro/id6761542565';
+      }
+      // Android detection
+      return 'https://play.google.com/store/apps/details?id=com.gorro.app';
+    }
+    return 'https://play.google.com/store/apps/details?id=com.gorro.app';
+  };
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -204,29 +217,16 @@ export default function About() {
             Whether you&apos;re saving personally or managing funds for a group, Gorro is built for you. 
             Download the app and start today.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex items-center justify-center">
             <Link
-              href="#"
-              className="flex items-center justify-center gap-30 text-white  duration-200"
-              // className="flex items-center justify-center gap-3 bg-black hover:bg-gray-800 text-white py-3 px-6 rounded-lg transition-colors duration-200"
+              href={getDownloadLink()}
+              className="flex items-center justify-center rounded-lg transition-all duration-200 hover:scale-105"
             >
               <Image
-                src={ui.appStore}
-                alt="Download on App Store"
-                width={150}
-                height={30}
-                className="object-contain"
-              />
-            </Link>
-            <Link
-              href="#"
-              className="flex items-center justify-center gap-3 text-white  duration-200"
-            >
-              <Image
-                src={ui.playStore}
-                alt="Get it on Google Play"
-                width={150}
-                height={30}
+                src={REMOTE_ASSETS.downloads.download}
+                alt="Download Gorro App"
+                width={300}
+                height={80}
                 className="object-contain"
               />
             </Link>

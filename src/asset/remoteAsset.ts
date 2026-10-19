@@ -70,6 +70,18 @@ export const REMOTE_ASSETS = {
   },
 
   // Social Media Icons
+  cluster: {
+    withdraw: 'https://res.cloudinary.com/dhipowibc/image/upload/v1792403079/Cluster_Carousel_05_3x_ytiimg.png',
+    payment: 'https://res.cloudinary.com/dhipowibc/image/upload/v1792403070/Cluster_Carousel_04_3x_qyjxzi.png',
+    government: 'https://res.cloudinary.com/dhipowibc/image/upload/v1792403070/Cluster_Carousel_01_3x_hxm9jj.png',
+    payment_method: 'https://res.cloudinary.com/dhipowibc/image/upload/v1792403069/Cluster_Carousel_03_3x_kkvjr1.png',
+    report: 'https://res.cloudinary.com/dhipowibc/image/upload/v1792403069/Cluster_Carousel_02_3x_wvur70.png',
+  },
+
+  downloads: {
+    download: 'https://res.cloudinary.com/dhipowibc/image/upload/v1792403372/Download_app_3x_bjfpaf.png',
+  },
+
   social: {
     facebook: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481336/FacebookLogo_b6t2ff.svg',
     linkedin: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481339/linkedin_skhuaq.svg',
@@ -88,6 +100,8 @@ export type LogoKeys = keyof typeof REMOTE_ASSETS.logos;
 export type HeroKeys = keyof typeof REMOTE_ASSETS.hero;
 export type ProductKeys = keyof typeof REMOTE_ASSETS.products;
 export type FeatureKeys = keyof typeof REMOTE_ASSETS.features;
+export type ClusterKeys = keyof typeof REMOTE_ASSETS.cluster;
+export type DownloadKeys = keyof typeof REMOTE_ASSETS.downloads;
 export type SocialKeys = keyof typeof REMOTE_ASSETS.social;
 export type UiKeys = keyof typeof REMOTE_ASSETS.ui;
 

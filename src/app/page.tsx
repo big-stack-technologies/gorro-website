@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { features, hero, products, ui } from '@/asset/remoteAsset';
+import { features, hero, products, ui, REMOTE_ASSETS } from '@/asset/remoteAsset';
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -20,10 +20,39 @@ export default function Home() {
   // Mouse tracking state for parallax effect
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
+  
+  // Cluster carousel state
+  const [currentClusterIndex, setCurrentClusterIndex] = useState(0);
+  const clusterImages = [
+    { url: REMOTE_ASSETS.cluster.government, alt: 'Government' },
+    { url: REMOTE_ASSETS.cluster.report, alt: 'Report' },
+    { url: REMOTE_ASSETS.cluster.payment_method, alt: 'Payment Method' },
+    { url: REMOTE_ASSETS.cluster.payment, alt: 'Payment' },
+    { url: REMOTE_ASSETS.cluster.withdraw, alt: 'Withdraw' },
+  ];
+
+  // Detect device for download button
+  const getDownloadLink = () => {
+    if (typeof window !== 'undefined') {
+      const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+      // iOS detection
+      if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+        return 'https://apps.apple.com/app/gorro/id6761542565';
+      }
+      // Android detection
+      return 'https://play.google.com/store/apps/details?id=com.gorro.app';
+    }
+    return 'https://play.google.com/store/apps/details?id=com.gorro.app';
+  };
 
   useEffect(() => {
     // Register GSAP plugins
     gsap.registerPlugin(ScrollTrigger);
+
+    // Cluster carousel auto-rotate
+    const carouselInterval = setInterval(() => {
+      setCurrentClusterIndex((prevIndex) => (prevIndex + 1) % clusterImages.length);
+    }, 3000); // Change image every 3 seconds
 
     // Hero section animations
     const heroElements = heroRef.current?.querySelectorAll('h1, p, .flex-wrap > div');
@@ -201,6 +230,7 @@ export default function Home() {
     // Cleanup
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      clearInterval(carouselInterval);
     };
   }, []);
 
@@ -225,6 +255,23 @@ export default function Home() {
                 Nigerians actually manage money together. Save personally.
                 Save as a group. Govern community funds with full transparency.
               </p>
+
+              {/* Download Button */}
+              <div className="flex justify-center lg:justify-start mb-8">
+                <Link
+                  href={getDownloadLink()}
+                  className="flex items-center justify-center rounded-lg transition-all duration-200 hover:scale-105"
+                >
+                  <Image
+                    src={REMOTE_ASSETS.downloads.download}
+                    alt="Download Gorro App"
+                    width={250}
+                    height={70}
+                    className="object-contain"
+                  />
+                </Link>
+              </div>
+
               {/* <div className="flex flex-wrap gap-6 text-sm text-gray-700 mb-8 block items-center text-center justify-center md:justify-start md:items-center ">
                 <div className="flex items-center gap-2 text-start">
                   <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center ">
@@ -416,16 +463,21 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <div className=" overflow-hidden min-h-[300px] relative">
+            <div className="overflow-hidden min-h-[400px] lg:min-h-[200px] relative">
               {/* <div className="absolute inset-0 bg-gradient-to-br from-[#0a3d2e]/20 to-transparent z-10"></div> */}
-              <div className="w-full h-full  flex items-center justify-centerl">
-                 <Image
-                        src={hero.gorroCluster}
-                        alt="Gorro Cluster"
-                        width={500}
-                        height={450}
-                        className="object-contain rounded-2xl"
-                      />
+              <div className="w-full h-full flex items-center justify-center relative">
+                {clusterImages.map((image, index) => (
+                  <Image
+                    key={index}
+                    src={image.url}
+                    alt={image.alt}
+                    width={800}
+                    height={700}
+                    className={`object-contain rounded-2xl w-full h-full absolute transition-opacity duration-1000 ${
+                      index === currentClusterIndex ? 'opacity-100' : 'opacity-0'
+                    }`}
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -786,28 +838,16 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <div className="space-y-1 mb-6 flex gap-2 items-center ">
+              <div className="space-y-1 mb-6 flex gap-2 ">
                 <Link
-                  href="https://apps.apple.com/app/gorro/id6761542565"
-                  className="flex items-center justify-center gap-3 bg-black text-white  rounded-lg transition-colors duration-200"
+                  href={getDownloadLink()}
+                  className="flex items-center justify-center rounded-lg transition-all duration-200 hover:scale-105"
                 >
                   <Image
-                    src={ui.appStore}
-                    alt="Download on App Store"
-                    width={150}
-                    height={30}
-                    className="object-contain"
-                  />
-                </Link>
-                <Link
-                  href="https://play.google.com/store/apps/details?id=com.gorro.app"
-                  className="flex items-center justify-center gap-3 bg-black  text-white rounded-lg transition-colors duration-200"
-                >
-                  <Image
-                    src={ui.playStore}
-                    alt="Get it on Google Play"
-                    width={150}
-                    height={30}
+                    src={REMOTE_ASSETS.downloads.download}
+                    alt="Download Gorro App"
+                    width={300}
+                    height={80}
                     className="object-contain"
                   />
                 </Link>
