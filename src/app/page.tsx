@@ -46,11 +46,6 @@ export default function Home() {
       setDownloadLink('https://play.google.com/store/apps/details?id=com.gorro.app');
     }
 
-    // Cluster carousel auto-rotate
-    const carouselInterval = setInterval(() => {
-      setCurrentClusterIndex((prevIndex) => (prevIndex + 1) % clusterImages.length);
-    }, 3000); // Change image every 3 seconds
-
     // Hero section animations
     const heroElements = heroRef.current?.querySelectorAll('h1, p, .flex-wrap > div');
     if (heroElements) {
@@ -227,7 +222,6 @@ export default function Home() {
     // Cleanup
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-      clearInterval(carouselInterval);
     };
   }, []);
 
@@ -439,7 +433,6 @@ export default function Home() {
                 {[
                   'Three-admin co-approval for all withdrawals',
                   'Transparent member ledger — everyone sees everything',
-                  '24-hour cooling period for admin changes',
                   'Built-in dispute mechanism to protect members',
                   'Off-platform contributions via virtual accounts',
                   'Permanent, tamper-proof transaction history',
@@ -460,22 +453,47 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <div className="overflow-hidden min-h-[400px] lg:min-h-[200px] relative">
-              {/* <div className="absolute inset-0 bg-gradient-to-br from-[#0a3d2e]/20 to-transparent z-10"></div> */}
+            <div className="overflow-hidden min-h-[200px] lg:min-h-[300px] relative">
+              {/* Continuous sliding carousel - all images in a row */}
               <div className="w-full h-full flex items-center justify-center relative">
-                {clusterImages.map((image, index) => (
-                  <Image
-                    key={index}
-                    src={image.url}
-                    alt={image.alt}
-                    width={800}
-                    height={700}
-                    className={`object-contain rounded-2xl w-full h-full absolute transition-opacity duration-1000 ${
-                      index === currentClusterIndex ? 'opacity-100' : 'opacity-0'
-                    }`}
-                  />
-                ))}
+                <div 
+                  className="flex gap-0 infinite-scroll"
+                >
+                  {/* Render images multiple times for seamless infinite loop - NO GAP */}
+                  {[...clusterImages, ...clusterImages, ...clusterImages, ...clusterImages].map((image, index) => (
+                    <div key={index} className="flex-shrink-0" style={{ width: '200px', minWidth: '200px' }}>
+                      <Image
+                        src={image.url}
+                        alt={image.alt}
+                        width={200}
+                        height={180}
+                        className="object-contain rounded-2xl w-full h-auto"
+                        priority={index < 3}
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
+              
+              {/* CSS animation for infinite continuous sliding */}
+              <style jsx>{`
+                .infinite-scroll {
+                  animation: scroll 30s linear infinite;
+                }
+                
+                @keyframes scroll {
+                  0% {
+                    transform: translateX(0);
+                  }
+                  100% {
+                    transform: translateX(-50%);
+                  }
+                }
+                
+                .infinite-scroll:hover {
+                  animation-play-state: running;
+                }
+              `}</style>
             </div>
           </div>
 
