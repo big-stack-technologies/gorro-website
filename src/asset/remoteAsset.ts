@@ -25,6 +25,30 @@ export const REMOTE_ASSETS = {
     redArrowOnborading:'https://res.cloudinary.com/dhipowibc/image/upload/v1790838777/Shapes_02_fvnfby.png',
   },
 
+  // Gorro Cluster Hero Slides
+  GORRO_CLUSTER: {
+    slideHero1: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552599/Cluster_page_II_3x_fsglqm.png', 
+    slideHero2: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552599/Cluster_page_IV_3x_hqeohl.png', 
+    slideHero3: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552599/Cluster_page_III_3x_rd1z2y.png', 
+    slideHero4: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552600/Cluster_page_3x_z7or5f.png', 
+    standAlone1: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552600/II_Cluster_page_3x_poohq6.png',
+    standAlone2: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552600/II_Cluster_page_IV_3x_iuzc09.png',
+    standAlone3: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552599/II_Cluster_page_IV_3x_1_na7n4s.png',
+    standAlone4: 'https://res.cloudinary.com/dhipowibc/image/upload/v1792403070/Cluster_Carousel_04_3x_qyjxzi.png',
+  },
+
+  // Target Savings Hero Slides
+  TARGET_SAVINGS: {
+    slideHero1: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552602/Target_page_II_3x_lnau7n.png', 
+    slideHero2: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552602/Target_page_3x_ernmwj.png', 
+    slideHero3: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552602/Target_page_III_3x_tzhn6a.png', 
+    slideHero4: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552602/Target_page_IV_3x_yivd3y.png', 
+    standAlone2: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552601/II_Target_page_IV_3x_yjf70h.png',
+    standAlone3: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552601/II_Target_page_III_3x_g2j9xu.png',
+    standAlone4: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552601/II_Target_page_II_3x_uyhj0p.png',
+    standHalf1: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552601/II_Target_page_III_half_3x_nnuvgm.png',    
+  },
+
   // Product Screenshots/Mockups
   products: {
     fixedSaving: 'https://res.cloudinary.com/dhipowibc/image/upload/v1790376060/Fixed_Savings_P1_Final_3x_ujen3o.png', 
@@ -38,6 +62,70 @@ export const REMOTE_ASSETS = {
     smartWalletHover: 'https://res.cloudinary.com/dhipowibc/image/upload/v1790371567/Smart_Wallet_Phase_2_3x_k6h0lk.png', 
     
   },
+
+
+  GORRO_TARGET: {
+    slideHero1: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552602/Target_page_II_3x_lnau7n.png', 
+    slideHero2: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552602/Target_page_3x_ernmwj.png', 
+    slideHero3: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552602/Target_page_III_3x_tzhn6a.png', 
+    slideHero4: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552602/Target_page_IV_3x_yivd3y.png', 
+    slideHero5: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793552602/Target_page_III_3x_1_bvef9i.png', 
+    standAlone1:'https://res.cloudinary.com/dhipowibc/image/upload/v1793552602/II_Target_page_3x_qjdbez.png',
+    standAlone2:'https://res.cloudinary.com/dhipowibc/image/upload/v1793552601/II_Target_page_IV_3x_yjf70h.png',
+    standAlone3:'https://res.cloudinary.com/dhipowibc/image/upload/v1793552601/II_Target_page_III_3x_g2j9xu.png',
+    standAlone4:'https://res.cloudinary.com/dhipowibc/image/upload/v1793552601/II_Target_page_II_3x_uyhj0p.png',
+    standHalf1:'https://res.cloudinary.com/dhipowibc/image/upload/v1793552601/II_Target_page_III_half_3x_nnuvgm.png',    
+  },
+
+  GORRO_CIRCLE: {
+    slideHero1: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793804188/Circle_Screen_3x_fld2si.png', 
+    slideHero2: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793804189/Circle_Screen_II_3x_lgaurj.png', 
+    slideHero3: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793804191/Circle_Screen_III_3x_dwnmas.png', 
+    slideHero4: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793804193/Circle_Screen_IV_3x_flxc5i.png', 
+    standAlone1:'https://res.cloudinary.com/dhipowibc/image/upload/v1793804195/Straight_Circle_Screen_3x_rxy31y.png',
+    standAlone2:'https://res.cloudinary.com/dhipowibc/image/upload/v1793804196/Straight_Circle_Screen_II_3x_bsl7cx.png',
+    standAlone3:'https://res.cloudinary.com/dhipowibc/image/upload/v1793804197/Straight_Circle_Screen_III_3x_cpr1kd.png',
+    standAlone4:'https://res.cloudinary.com/dhipowibc/image/upload/v1793804198/Straight_Circle_Screen_IV_3x_u2ato8.png',
+    standHalf1:'',    
+  },
+
+  GORRO_AJO: {
+    slideHero1: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793738380/Ajo_Angled_01_3x_iqroz0.png', 
+    slideHero2: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793738381/Ajo_Angled_02_3x_rpysas.png', 
+    slideHero3: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793738381/Ajo_Angled_03_3x_kdwe17.png', 
+    slideHero4: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793738381/Ajo_Angled_04_3x_gq13co.png', 
+    standAlone1:'https://res.cloudinary.com/dhipowibc/image/upload/v1793738381/Ajo_Fullscreen_01_3x_uoidhs.png',
+    standAlone2:'https://res.cloudinary.com/dhipowibc/image/upload/v1793738381/Ajo_Fullscreen_03_3x_mmc35x.png',
+    standAlone3:'https://res.cloudinary.com/dhipowibc/image/upload/v1793738381/Ajo_Fullscreen_04_3x_oegthf.png',
+    standAlone4:'https://res.cloudinary.com/dhipowibc/image/upload/v1793738380/Ajo_Fullscreen_02_3x_vde6ww.png',
+    standHalf1:'',    
+  },
+
+  GORRO_FIXED: {
+    slideHero1: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793803780/Fixed_angled_01_3x_fk4mxp.png', 
+    slideHero2: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793803780/Fixed_angled_03_3x_encjvj.png', 
+    slideHero3: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793803780/Fixed_angled_02_3x_pcjnqh.png', 
+    slideHero4: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793803781/Fixed_angled_04_3x_ffxkcp.png', 
+    standAlone1:'https://res.cloudinary.com/dhipowibc/image/upload/v1793803781/Fixed_fullscreen_01_3x_bql7qe.png',
+    standAlone2:'https://res.cloudinary.com/dhipowibc/image/upload/v1793803782/Fixed_fullscreen_02_3x_tn7zqm.png',
+    standAlone3:'https://res.cloudinary.com/dhipowibc/image/upload/v1793803782/Fixed_fullscreen_03_3x_ng84bn.png',
+    standAlone4:'https://res.cloudinary.com/dhipowibc/image/upload/v1793803783/Fixed_fullscreen_04_3x_yskadm.png',
+    standHalf1:'',    
+  },
+
+  GORRO_VAULT: {
+    slideHero1: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793803365/Vault_angled_screen_01_3x_mxgusu.png', 
+    slideHero2: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793803363/Vault_angled_screen_04_3x_vukud5.png', 
+    slideHero3: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793803363/Vault_angled_screen_03_3x_v33pi5.png', 
+    slideHero4: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793803363/Vault_angled_screen_02_3x_cvkmce.png', 
+    standAlone1:'https://res.cloudinary.com/dhipowibc/image/upload/v1793803364/Vault_fullscreen_03_3x_hww3zo.png',
+    standAlone2:'https://res.cloudinary.com/dhipowibc/image/upload/v1793803363/Vault_fullscreen_04_3x_xqgl3s.png',
+    standAlone3:'https://res.cloudinary.com/dhipowibc/image/upload/v1793803362/Vault_fullscreen_01_3x_kag7t7.png',
+    standAlone4:'https://res.cloudinary.com/dhipowibc/image/upload/v1793803362/Vault_fullscreen_02_3x_ub61nb.png',
+    standHalf1:'',    
+  },
+
+
 
   // Feature Icons
   features: {
@@ -82,6 +170,21 @@ export const REMOTE_ASSETS = {
     download: 'https://res.cloudinary.com/dhipowibc/image/upload/v1792403372/Download_app_3x_bjfpaf.png',
   },
 
+  ARROWS: {
+    fixedLeft:   'https://res.cloudinary.com/dhipowibc/image/upload/v1793738437/Shape_R_04_3x_zef8jv.png',
+    fixedRight:  'https://res.cloudinary.com/dhipowibc/image/upload/v1793738426/Shape_L_04_3x_w5aqf0.png',
+    vaultLeft:   'https://res.cloudinary.com/dhipowibc/image/upload/v1793738437/Shape_R_06_3x_aglcum.png',
+    vaultRight:  'https://res.cloudinary.com/dhipowibc/image/upload/v1793738431/Shape_L_06_3x_vrecxw.png',
+    clusterLeft: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793738432/Shape_R_02_3x_f4tmum.png',
+    clusterRight:'https://res.cloudinary.com/dhipowibc/image/upload/v1793738425/Shape_L_02_3x_vqytem.png',
+    ajoLeft:     'https://res.cloudinary.com/dhipowibc/image/upload/v1793738437/Shape_R_05_3x_vvjgea.png',
+    ajoRight:    'https://res.cloudinary.com/dhipowibc/image/upload/v1793738428/Shape_L_05_3x_gzy4zy.png',
+    targetLeft:  'https://res.cloudinary.com/dhipowibc/image/upload/v1793738432/Shape_R_01_3x_vvyqcg.png',
+    targetRight: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793738425/Shape_L_01_3x_yzwxft.png',
+    circleLeft:  'https://res.cloudinary.com/dhipowibc/image/upload/v1793738433/Shape_R_03_3x_iftuyo.png',
+    circleRight: 'https://res.cloudinary.com/dhipowibc/image/upload/v1793738426/Shape_L_03_3x_dgc0h7.png',
+  },
+
   social: {
     facebook: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481336/FacebookLogo_b6t2ff.svg',
     linkedin: 'https://res.cloudinary.com/dhipowibc/image/upload/v1774481339/linkedin_skhuaq.svg',
@@ -92,7 +195,7 @@ export const REMOTE_ASSETS = {
 } as const;
 
 // Individual exports for easy importing
-export const { logos, hero, products, features, social, ui } = REMOTE_ASSETS;
+export const { logos, hero, products, features, social, ui, TARGET_SAVINGS, GORRO_CLUSTER, GORRO_CIRCLE, GORRO_AJO, GORRO_FIXED, GORRO_VAULT, ARROWS } = REMOTE_ASSETS;
 
 // Type definitions for better TypeScript support
 export type RemoteAssetKeys = keyof typeof REMOTE_ASSETS;
@@ -104,5 +207,11 @@ export type ClusterKeys = keyof typeof REMOTE_ASSETS.cluster;
 export type DownloadKeys = keyof typeof REMOTE_ASSETS.downloads;
 export type SocialKeys = keyof typeof REMOTE_ASSETS.social;
 export type UiKeys = keyof typeof REMOTE_ASSETS.ui;
+export type GORRO_TARGET = keyof typeof REMOTE_ASSETS.GORRO_TARGET;
+export type GORRO_CLUSTER = keyof typeof REMOTE_ASSETS.GORRO_CLUSTER;
+export type GORRO_CIRCLE = keyof typeof REMOTE_ASSETS.GORRO_CIRCLE;
+export type GORRO_AJO = keyof typeof REMOTE_ASSETS.GORRO_AJO;
+export type GORRO_FIXED = keyof typeof REMOTE_ASSETS.GORRO_FIXED;
+export type GORRO_VAULT = keyof typeof REMOTE_ASSETS.GORRO_VAULT;
 
 export default REMOTE_ASSETS;

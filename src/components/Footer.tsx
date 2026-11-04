@@ -51,11 +51,12 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               {[
-                { label: 'Gorro Cluster', href: '#' },
-                { label: 'Circle savings', href: '#' },
-                { label: 'Fixed Savings', href: '#' },
-                { label: 'Target Savings', href: '#' },
-                { label: 'Gorro Vault', href: '#' },
+                { label: 'Gorro Cluster', href: '/products/cluster' },
+                { label: 'Circle savings', href: '/products/circle' },
+                { label: 'Ajo', href: '/products/ajo' },
+                { label: 'Fixed Savings', href: '/products/fixed-savings' },
+                { label: 'Target Savings', href: '/products/target-savings' },
+                { label: 'Gorro Vault', href: '/products/vault' },
               ].map(({ label, href }) => (
                 <li key={label}>
                   <Link
